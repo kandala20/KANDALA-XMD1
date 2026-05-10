@@ -1,1 +1,166 @@
-const _0x2cc367=_0x2111;(function(_0x2f0910,_0x22d6d1){const _0x61a90c=_0x2111,_0x4abad8=_0x2f0910();while(!![]){try{const _0x3665b7=parseInt(_0x61a90c(0x11f))/(0x80a+0x1f97+-0x20*0x13d)+parseInt(_0x61a90c(0xe2))/(-0x2264+0xd1*0x1c+0x2*0x5c5)*(parseInt(_0x61a90c(0x171))/(-0x244d*-0x1+0x1872+-0x3cbc))+parseInt(_0x61a90c(0xe8))/(0x171*-0x1b+0x1e22+-0x1*-0x8cd)+-parseInt(_0x61a90c(0x103))/(-0x247+0x128+0x124)*(-parseInt(_0x61a90c(0x176))/(-0xa9+0x1892+0x5*-0x4c7))+-parseInt(_0x61a90c(0x104))/(-0x564+-0x17b0+0x1*0x1d1b)+-parseInt(_0x61a90c(0xed))/(-0x554+-0x1c4c+0x21a8)*(parseInt(_0x61a90c(0x14e))/(-0x2*-0xab7+0x125*-0x1d+0x2*0x5e6))+-parseInt(_0x61a90c(0x109))/(-0x246+-0x1083*-0x2+-0x1eb6*0x1);if(_0x3665b7===_0x22d6d1)break;else _0x4abad8['push'](_0x4abad8['shift']());}catch(_0x491bde){_0x4abad8['push'](_0x4abad8['shift']());}}}(_0x2e41,0x88c3e+-0x1031bc+0x1375ed));const {getGroupSettings,getSudoUsers}=require(_0x2cc367(0x128)+_0x2cc367(0x130)),Events=async(_0x281afb,_0x2d4667,_0x5d8948)=>{const _0x178025=_0x2cc367,_0x417624={'kmyrQ':_0x178025(0x121),'DfyGk':_0x178025(0x111)+_0x178025(0x14c)+_0x178025(0xda)+'.','pCxJy':function(_0x69aa28,_0x5595e7){return _0x69aa28(_0x5595e7);},'jTpNb':function(_0x1da9e0,_0x8a7411){return _0x1da9e0===_0x8a7411;},'zbsDW':function(_0x1fdbf1,_0x34412a){return _0x1fdbf1===_0x34412a;},'nDeXq':function(_0x57dabd){return _0x57dabd();},'mlHUH':_0x178025(0x154),'GniCi':function(_0x4f5c51,_0x195136){return _0x4f5c51<_0x195136;},'XKGPK':_0x178025(0x10f),'hwhtb':function(_0x4cbae9,_0x1fcd25){return _0x4cbae9<_0x1fcd25;},'fGFRh':_0x178025(0x173),'tiBoq':function(_0x3428dd,_0x43dadd){return _0x3428dd===_0x43dadd;},'jYBVo':function(_0x120712,_0x598ceb){return _0x120712===_0x598ceb;},'jcHAy':function(_0x2d4745,_0x1c3d46){return _0x2d4745===_0x1c3d46;},'ZYBUF':_0x178025(0x165),'EcLtT':function(_0x37b303,_0x33251f){return _0x37b303===_0x33251f;},'DguRV':function(_0x21af2d,_0x5270f1){return _0x21af2d===_0x5270f1;},'wKTeU':function(_0x19ef04,_0xb16e2e){return _0x19ef04===_0xb16e2e;}},_0x4bdca1=await _0x281afb[_0x178025(0x139)](_0x281afb[_0x178025(0x134)]['id']);try{const _0x242b95=await _0x281afb[_0x178025(0xeb)+_0x178025(0x15f)](_0x2d4667['id']),_0x20ef61=_0x2d4667[_0x178025(0x167)+'ts'],_0x251b16=_0x242b95[_0x178025(0x100)]||_0x417624[_0x178025(0xe5)],_0x4f8bc4=_0x242b95[_0x178025(0x167)+'ts'][_0x178025(0xea)],_0x4cad55=_0x242b95[_0x178025(0x167)+'ts'][_0x178025(0xe4)](_0x335979=>_0x335979[_0x178025(0xf6)]===_0x178025(0xf6)||_0x335979[_0x178025(0xf6)]===_0x178025(0x120))[_0x178025(0xea)],_0x3bb81b=await _0x417624[_0x178025(0xdb)](getGroupSettings,_0x2d4667['id']),_0x4215b0=_0x417624[_0x178025(0xe9)](_0x3bb81b?.[_0x178025(0x174)],!![]),_0x59a376=_0x417624[_0x178025(0x131)](_0x3bb81b?.[_0x178025(0x17a)],!![]),_0x335f0b=_0x417624[_0x178025(0xe9)](_0x3bb81b?.[_0x178025(0x10d)+'e'],!![]),_0x4f2fd3=await _0x417624[_0x178025(0x143)](getSudoUsers),_0x33b106=Array[_0x178025(0x10c)](_0x4f2fd3)?_0x4f2fd3[_0x178025(0x11a)](_0x5cde79=>_0x5cde79[_0x178025(0xde)](/[^0-9]/g,'')+(_0x178025(0x148)+_0x178025(0x132))):[],_0x2d160d=_0x20ef61[_0x178025(0x11a)](async _0x4d5a82=>{const _0x179905=_0x178025;try{return await _0x281afb[_0x179905(0xef)+_0x179905(0x13e)](_0x4d5a82,_0x417624[_0x179905(0x12d)]);}catch{return _0x5d8948;}}),_0x462f35=await Promise[_0x178025(0x149)](_0x2d160d);if(_0x4215b0&&_0x417624[_0x178025(0xe9)](_0x2d4667[_0x178025(0xf2)],_0x417624[_0x178025(0x155)]))try{for(let _0xf7373a=0x2fc*-0x1+-0xd*-0x5+0x2bb;_0x417624[_0x178025(0xf1)](_0xf7373a,_0x20ef61[_0x178025(0xea)]);_0xf7373a++){const _0x13813e=_0x20ef61[_0xf7373a],_0x16d6b5=_0x13813e[_0x178025(0xee)]('@')[0xbdc+-0x40f*0x3+0x51];await _0x281afb[_0x178025(0x14b)+'e'](_0x2d4667['id'],{'image':{'url':_0x462f35[_0xf7373a]},'caption':_0x178025(0x110)+_0x178025(0x129)+_0x178025(0x14f)+_0x178025(0x152)+_0x178025(0x150)+_0x178025(0xfb)+_0x16d6b5+(_0x178025(0x135)+_0x178025(0x16d))+_0x242b95[_0x178025(0x136)]+(_0x178025(0xdf)+_0x178025(0x157))+_0x251b16+(_0x178025(0xd7)+_0x178025(0x133))+_0x4f8bc4+(_0x178025(0x17c)+_0x178025(0x108))+_0x4cad55+(_0x178025(0x166)+_0x178025(0x141)+_0x178025(0xd9)+_0x178025(0x107)+_0x178025(0x15c)+_0x178025(0x156)+_0x178025(0x11d)+_0x178025(0x13b)+_0x178025(0x118)),'mentions':[_0x13813e]});}}catch{}else{if(_0x4215b0&&_0x417624[_0x178025(0xe9)](_0x2d4667[_0x178025(0xf2)],_0x417624[_0x178025(0x16e)]))try{for(let _0x643a44=0xf6*0x3+0x163a+0x2*-0xc8e;_0x417624[_0x178025(0x11b)](_0x643a44,_0x20ef61[_0x178025(0xea)]);_0x643a44++){const _0x19369c=_0x20ef61[_0x643a44],_0x38c60f=_0x19369c[_0x178025(0xee)]('@')[0x1*-0x170a+-0x16f*-0x15+-0x711];await _0x281afb[_0x178025(0x14b)+'e'](_0x2d4667['id'],{'image':{'url':_0x462f35[_0x643a44]},'caption':_0x178025(0x110)+_0x178025(0x129)+_0x178025(0x10e)+_0x178025(0xfe)+_0x178025(0x159)+_0x178025(0x106)+_0x178025(0x124)+_0x38c60f+(_0x178025(0x135)+_0x178025(0x16d))+_0x242b95[_0x178025(0x136)]+(_0x178025(0xd7)+_0x178025(0xfa)+':\x20')+_0x4f8bc4+(_0x178025(0x17c)+_0x178025(0x13f))+_0x4cad55+(_0x178025(0x178)+_0x178025(0x105)+_0x178025(0xdd)+_0x178025(0x13b)+_0x178025(0x140)),'mentions':[_0x19369c]});}}catch{}}if(_0x417624[_0x178025(0x131)](_0x2d4667[_0x178025(0xf2)],_0x417624[_0x178025(0x162)])&&_0x59a376)try{const _0x1226cc=_0x20ef61[0x1d78+-0x26c+0x6*-0x482];if(_0x417624[_0x178025(0x15e)](_0x2d4667[_0x178025(0x147)],_0x242b95[_0x178025(0x122)])||_0x417624[_0x178025(0x119)](_0x2d4667[_0x178025(0x147)],_0x4bdca1)||_0x417624[_0x178025(0x142)](_0x2d4667[_0x178025(0x147)],_0x1226cc)||_0x33b106[_0x178025(0x170)](_0x2d4667[_0x178025(0x147)])){await _0x281afb[_0x178025(0x14b)+'e'](_0x2d4667['id'],{'text':_0x178025(0x110)+_0x178025(0x129)+_0x178025(0xf3)+_0x178025(0x138)+_0x178025(0x125)+_0x178025(0x144)+_0x178025(0x169)+_0x1226cc[_0x178025(0xee)]('@')[-0x1*-0xa21+0x4f*0x2a+-0x1717]+(_0x178025(0x12a)+_0x178025(0x101)+_0x178025(0x15a)+_0x178025(0x102))+_0x4f8bc4+(_0x178025(0x17c)+_0x178025(0x108))+_0x4cad55+(_0x178025(0x178)+_0x178025(0xe1)+_0x178025(0xfd)+_0x178025(0x12e)+_0x178025(0x13b)+'━━'),'mentions':[_0x1226cc]});return;}await _0x281afb[_0x178025(0x11c)+_0x178025(0xf8)+_0x178025(0xff)](_0x2d4667['id'],[_0x2d4667[_0x178025(0x147)]],_0x417624[_0x178025(0x162)]),await _0x281afb[_0x178025(0x11c)+_0x178025(0xf8)+_0x178025(0xff)](_0x2d4667['id'],[_0x1226cc],_0x417624[_0x178025(0x117)]),await _0x281afb[_0x178025(0x14b)+'e'](_0x2d4667['id'],{'text':_0x178025(0x110)+_0x178025(0x129)+_0x178025(0xd8)+_0x178025(0x17d)+_0x178025(0x153)+_0x178025(0x11e)+_0x178025(0x13c)+_0x178025(0x126)+_0x178025(0x164)+_0x178025(0x169)+_0x2d4667[_0x178025(0x147)][_0x178025(0xee)]('@')[-0x1c05+0x1d*0x6d+0xfac]+(_0x178025(0xe0)+_0x178025(0x158))+_0x1226cc[_0x178025(0xee)]('@')[-0x191b+-0x1*-0x1e6d+-0x1c6*0x3]+(_0x178025(0xd7)+_0x178025(0x133))+_0x4f8bc4+(_0x178025(0x17c)+_0x178025(0x108))+_0x4cad55+(_0x178025(0x16a)+_0x178025(0x14a)+_0x178025(0x16b)+_0x178025(0x177)+_0x178025(0x12b)+_0x178025(0x163)+_0x178025(0x13b)+_0x178025(0x140)),'mentions':[_0x2d4667[_0x178025(0x147)],_0x1226cc]});}catch{}else{if(_0x417624[_0x178025(0x179)](_0x2d4667[_0x178025(0xf2)],_0x417624[_0x178025(0x117)])&&_0x335f0b)try{const _0x32f542=_0x20ef61[-0x1c29*-0x1+-0x2a4+0x2f*-0x8b];if(_0x417624[_0x178025(0xe9)](_0x2d4667[_0x178025(0x147)],_0x242b95[_0x178025(0x122)])||_0x417624[_0x178025(0x123)](_0x2d4667[_0x178025(0x147)],_0x4bdca1)||_0x417624[_0x178025(0x114)](_0x2d4667[_0x178025(0x147)],_0x32f542)||_0x33b106[_0x178025(0x170)](_0x2d4667[_0x178025(0x147)])){await _0x281afb[_0x178025(0x14b)+'e'](_0x2d4667['id'],{'text':_0x178025(0x110)+_0x178025(0x129)+_0x178025(0x175)+_0x178025(0x12f)+_0x178025(0xe6)+_0x178025(0x151)+_0x178025(0x172)+_0x32f542[_0x178025(0xee)]('@')[0x10df*0x1+0x3a8+-0x1487]+(_0x178025(0x13d)+_0x178025(0x16c)+_0x178025(0x14d)+_0x178025(0x15b))+_0x4f8bc4+(_0x178025(0x17c)+_0x178025(0x108))+_0x4cad55+(_0x178025(0x178)+_0x178025(0xe1)+_0x178025(0xfd)+_0x178025(0x12e)+_0x178025(0x13b)+'━━'),'mentions':[_0x32f542]});return;}await _0x281afb[_0x178025(0x11c)+_0x178025(0xf8)+_0x178025(0xff)](_0x2d4667['id'],[_0x2d4667[_0x178025(0x147)],_0x32f542],_0x417624[_0x178025(0x162)]),await _0x281afb[_0x178025(0x14b)+'e'](_0x2d4667['id'],{'text':_0x178025(0x110)+_0x178025(0x129)+_0x178025(0x12c)+_0x178025(0xfc)+_0x178025(0x153)+_0x178025(0x161)+_0x178025(0x17b)+_0x178025(0xf7)+_0x178025(0x160)+'\x20@'+_0x2d4667[_0x178025(0x147)][_0x178025(0xee)]('@')[0x9d3+-0x1*-0x54b+-0x81*0x1e]+(_0x178025(0x115)+_0x178025(0x146))+_0x32f542[_0x178025(0xee)]('@')[0x7*-0x4a9+0x4*-0x347+0x2dbb]+(_0x178025(0xd7)+_0x178025(0x133))+_0x4f8bc4+(_0x178025(0x17c)+_0x178025(0x108))+_0x4cad55+(_0x178025(0x168)+_0x178025(0xf9)+_0x178025(0x116)+_0x178025(0xe3)+_0x178025(0x16f)+_0x178025(0xe7)+_0x178025(0xf5)+_0x178025(0xd6)+_0x178025(0x13b)+_0x178025(0xf4)),'mentions':[_0x2d4667[_0x178025(0x147)],_0x32f542]});}catch{}}}catch{try{await _0x281afb[_0x178025(0x14b)+'e'](_0x2d4667['id'],{'text':_0x178025(0x110)+_0x178025(0x129)+_0x178025(0x10a)+_0x178025(0x137)+_0x178025(0x13a)+_0x178025(0x15d)+_0x178025(0xf0)+_0x178025(0xdc)+_0x178025(0x145)+_0x178025(0x112)+_0x178025(0x113)+_0x178025(0x10b)+_0x178025(0x127)+_0x178025(0x13b)+_0x178025(0x140)});}catch{}}};function _0x2e41(){const _0x11f658=['\x20\x20\x20\x20\x20\x20\x0a┋\x0a┋','━━━━━━━━━━','horized\x20de','\x0a┋\x20📈\x20Actio','tureUrl','s\x20\x20\x20\x20\x20\x20:\x20','━━━━','low\x20rules\x0a','jcHAy','nDeXq','\x0a┋\x20👤\x20User\x20','ry\x20again\x20l','t\x20:\x20@','author','@s.whatsap','all','emote\x20ACTI','sendMessag','escription','ed\x0a┋\x0a┋\x20👥\x20M','433242DBBsvw','┋\x20🤖\x20KANDAL','OME\x20\x0a┋\x0a┋\x20👋','\x20\x20┋\x0a┋\x0a┋\x20👤\x20','A-M.D\x20WELC','RITY\x20\x20\x20┋\x0a┋','add','mlHUH','𝒆𝒅\x20𝒃𝒚\x20KAND','\x20:\x20','cted\x20:\x20@','\x20NOTICE\x20┋\x0a','d\x0a┋\x0a┋\x20👥\x20Me','embers\x20:\x20','\x0a┋\x20🔥\x20𝒑𝒐𝒘𝒆𝒓','\x20❌\x20Event\x20h','tiBoq','ata','👤\x20Actor\x20\x20:','\x0a┋\x20⚠️\x20Unaut','fGFRh','ch\x0a╰━━━━━━','\x20Attacker\x20','promote','\x0a┋\x0a┋\x20⚡\x20Fol','participan','\x0a┋\x20🔁\x20Actio',':\x20@','\x0a┋\x20⚙️\x20Antid','VE\x0a┋\x0a┋\x20🔥\x20𝒑','n\x20:\x20Promot','up\x20:\x20','XKGPK','IVE\x0a┋\x0a┋\x20🔥\x20','includes','7578gBPJqZ','User\x20:\x20@','demote','events','┋\x20🔼\x20KANDAL','6pYdnbL','𝒐𝒘𝒆𝒓𝒆𝒅\x20𝒃𝒚\x20','\x0a┋\x0a┋\x20🔥\x20𝒑𝒐𝒘','EcLtT','antidemote','horized\x20pr','\x0a┋\x20🛡️\x20Admin','DA-MD\x20SECU','ech\x0a╰━━━━━','\x0a┋\x0a┋\x20👥\x20Mem','┋\x20🛡️\x20ANAKON','┋\x20⚡\x20Respec','\x20available','pCxJy','iled\x0a┋\x20🔧\x20T','nasa\x0a╰━━━━','replace','\x0a┋\x20📜\x20About','\x0a┋\x20🛡️\x20Prote','𝒆𝒓𝒆𝒅\x20𝒃𝒚\x20KA','160yVoiWQ','romote\x20ACT','filter','DfyGk','\x20NOTICE\x20\x20\x20','𝒑𝒐𝒘𝒆𝒓𝒆𝒅\x20𝒃𝒚','5244144PovcZf','jTpNb','length','groupMetad','exports','16NaKfYA','split','profilePic','andling\x20fa','GniCi','action','┋\x20🔽\x20KANDAL','━━━','\x20KANDALA\x20t','admin','omote\x0a┋\x0a┋\x20','cipantsUpd','n\x20reverted','bers\x20Left\x20','\x20Welcome\x20@','A-M.D\x20SECU','NDALA\x20tech','A-M.D\x20EXIT','ate','desc','n\x20:\x20Demote','mbers\x20:\x20','4341745sCoBZo','2998107MnuNbg','𝒆𝒓𝒆𝒅\x20𝒃𝒚\x20tm','┋\x0a┋\x20👋\x20Good','t\x20admins\x0a┋','s\x20\x20:\x20','16187920feYJJf','┋\x20⚠️\x20KANDAL','𝒚\x20KANDALA\x20','isArray','antipromot','┋\x20🚪\x20KANDAL','remove','╭━━━━━━━━━','No\x20group\x20d','ater\x0a┋\x0a┋\x20🔥','\x20𝒑𝒐𝒘𝒆𝒓𝒆𝒅\x20𝒃','wKTeU','\x0a┋\x20👤\x20Targe','\x0a┋\x20⚙️\x20Antip','ZYBUF','━━━━━━━','jYBVo','map','hwhtb','groupParti','ALA\x20tech\x0a╰','\x0a┋\x20🚫\x20Unaut','536159BLXvBV','superadmin','image','owner','DguRV','bye\x20@','CE\x20\x20\x20\x20\x20┋\x0a┋','mote\x0a┋\x0a┋\x20👤','tech\x0a╰━━━━','../Databas','━━━━━━━━━\x0a','\x0a┋\x20📉\x20Actio','KANDALA\x20te','┋\x20🚫\x20KANDAL','kmyrQ','\x0a╰━━━━━━━━','A\x20tech-TMD','e/config','zbsDW','p.net','bers\x20:\x20','user','\x0a┋\x0a┋\x20🦁\x20Gro','subject','A-MD\x20ERROR','A-M.D\x20NOTI','decodeJid'];_0x2e41=function(){return _0x11f658;};return _0x2e41();}function _0x2111(_0x1ae032,_0x53bf3a){_0x1ae032=_0x1ae032-(0xea1+-0x10d2+0x307);const _0x1e5b70=_0x2e41();let _0x25f388=_0x1e5b70[_0x1ae032];return _0x25f388;}module[_0x2cc367(0xec)]=Events;
+const { getGroupSettings, getSudoUsers } = require("../Database/config");
+
+const Events = async (client, event, pict) => {
+    const botJid = await client.decodeJid(client.user.id);
+
+    try {
+        const metadata = await client.groupMetadata(event.id);
+        const participants = event.participants;
+        const desc = metadata.desc || "Some boring group, I guess.";
+        const groupSettings = await getGroupSetting(event.id);
+        const eventsEnabled = groupSettings?.events === true;
+        const antidemote = groupSettings?.antidemote === true;
+        const antipromote = groupSettings?.antipromote === true;
+        const sudoUsers = await getSudoUsers();
+        const currentDevs = Array.isArray(sudoUsers)
+            ? sudoUsers.map(v => v.replace(/[^0-9]/g, "") + "@s.whatsapp.net")
+            : [];
+
+        for (const participant of participants) {
+            let dpUrl = pict;
+            try {
+                dpUrl = await client.profilePictureUrl(participant, "image");
+            } catch {
+                dpUrl = pict; // Fallback to default pic if user has no DP
+            }
+
+            if (eventsEnabled && event.action === "add") {
+                try {
+                    const userName = participant.split("@")[0];
+                    const welcomeText = 
+`╭┈┈➤「 🔥 Kandala-Xmd Welcome 🔥 」
+┋ 😈 *Yo, @${userName}, welcome to the chaos!*  
+┋
+┋ 🤖 *Bot*: Kandala-Xmd
+┋ 🦁 *Group*: ${metadata.subject}
+┋ 📜 *Desc*: ${desc}
+┋
+┋ 😼 *Try not to get roasted too hard, newbie!*
+╰┈┈➤「 🔥 𝒑𝒐𝒘𝒆𝒓𝒆𝒅 𝒃𝒚 Kandala-Xmd  🔥 」`;
+
+                    await client.sendMessage(event.id, {
+                        image: { url: dpUrl },
+                        caption: welcomeText,
+                        mentions: [participant]
+                    });
+                } catch {
+                    // Keep it chill, no error spam
+                }
+            } else if (eventsEnabled && event.action === "remove") {
+                try {
+                    const userName = participant.split("@")[0];
+                    const leaveText = 
+`╭┈┈➤「 🚪 Kandala-Xmd exit 🚪 」
+┋ 😎 *Later, @${userName}! Couldn’t handle the heat?*  
+┋
+┋ 🤖 *Bot*: Kandala-Xmd
+┋ 🦁 *Group*: ${metadata.subject}
+┋
+┋ 😜 *Don’t cry, we’ll survive without ya!*
+╰┈┈➤「 🔥 𝒑𝒐𝒘𝒆𝒓𝒆𝒅 𝒃𝒚 Kandala-Xmd 🔥 」`;
+
+                    await client.sendMessage(event.id, {
+                        image: { url: dpUrl },
+                        caption: leaveText,
+                        mentions: [participant]
+                    });
+                } catch {
+                    // No whining about errors
+                }
+            }
+
+            if (event.action === "demote" && antidemote) {
+                try {
+                    if (
+                        event.author === metadata.owner ||
+                        event.author === botJid ||
+                        event.author === participant ||
+                        currentDevs.includes(event.author)
+                    ) {
+                        await client.sendMessage(event.id, {
+                            text: 
+`╭┈┈➤「 🔽 Kandala-Xmd Demotion 🔽 」
+┋ 😤 *Big shot @${participant.split("@")[0]} got knocked down!*  
+┋
+┋ 🤖 *Bot*: Kandala-Xmd 
+┋ 🦁 *Group*: ${metadata.subject}
+╰┈┈➤「 🔥 𝒑𝒐𝒘𝒆𝒓𝒆𝒅 𝒃𝒚 Kandala-Xmd 🔥 」`,
+                            mentions: [participant]
+                        });
+                        return;
+                    }
+
+                    await client.groupParticipantsUpdate(event.id, [event.author], "demote");
+                    await client.groupParticipantsUpdate(event.id, [participant], "promote");
+
+                    await client.sendMessage(event.id, {
+                        text: 
+`╭┈┈➤「 🔽 Kandala-Xmd Antidemote 🔽 」
+┋ 😏 *Nice try, @${event.author.split("@")[0]}! Demoted for messing with @${participant.split("@")[0]}!*  
+┋
+┋ 🤖 *Bot*: Kandala-Xmd 
+┋ 🦁 *Group*: ${metadata.subject}
+┋ 📜 *Rule*: Antidemote’s on, loser. Only the big dogs can demote!
+╰┈┈➤「 🔥 𝒑𝒐𝒘𝒆𝒓𝒆𝒅 𝒃𝒚 Kandala-Xmd 🔥 」`,
+                        mentions: [event.author, participant]
+                    });
+                } catch {
+                    // Errors? Pfft, we don’t care
+                }
+            } else if (event.action === "promote" && antipromote) {
+                try {
+                    if (
+                        event.author === metadata.owner ||
+                        event.author === botJid ||
+                        event.author === participant ||
+                        currentDevs.includes(event.author)
+                    ) {
+                        await client.sendMessage(event.id, {
+                            text: 
+`╭┈┈➤「 🔼 Kandala-Xmd Promotion 🔼 」
+┋ 😎 *Big dog @${participant.split("@")[0]} just leveled up!*  
+┋
+┋ 🤖 *Bot*: Kandala-Xmd 
+┋ 🦁 *Group*: ${metadata.subject}
+╰┈┈➤「 🔥 𝒑𝒐𝒘𝒆𝒓𝒆𝒅 𝒃𝒚 Kandala-Xmd 🔥 」`,
+                            mentions: [participant]
+                        });
+                        return;
+                    }
+
+                    await client.groupParticipantsUpdate(event.id, [event.author, participant], "demote");
+
+                    await client.sendMessage(event.id, {
+                        text: 
+`╭┈┈➤「 🔼 Kandala-Xmd Antipromote 🔼 」
+┋ 😆 *Oof, @${event.author.split("@")[0]}! Demoted for trying to boost @${participant.split("@")[0]}!*  
+┋
+┋ 🤖 *Bot*: Kandala-Xmd 
+┋ 🦁 *Group*: ${metadata.subject}
+┋ 📜 *Rule*: @${participant.split("@")[0]} got yeeted too. Antipromote’s on, only the elite can promote!
+╰┈┈➤「 🔥 𝒑𝒐𝒘𝒆𝒓𝒆𝒅 𝒃𝒚 Kandala-Xmd 🔥 」`,
+                        mentions: [event.author, participant]
+                    });
+                } catch {
+                    // Errors are for the weak
+                }
+            }
+        }
+    } catch {
+        try {
+            await client.sendMessage(event.id, {
+                text: 
+`╭┈┈➤「 ⚠️ Kandala-Xmd Error ⚠️ 」
+┋ 😬 *Yikes, something broke. Blame the group vibes!*  
+┋
+┋ 🤖 *Bot*: Kandala-Xmd 
+┋ 🦁 *Group*: ${metadata.subject}
+╰┈┈➤「 🔥 𝒑𝒐𝒘𝒆𝒓𝒆𝒅 𝒃𝒚 Kandala-Xmd 🔥 」`
+            });
+        } catch {
+            // If this fails, we’re just cursed
+        }
+    }
+};
+
+module.exports = Events;
