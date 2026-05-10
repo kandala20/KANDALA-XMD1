@@ -51,9 +51,6 @@ const antidelete = require('../Functions/antidelete');
 const antilink = require('../Functions/antilink');
 const antistatusmention = require('../Functions/antistatusmention');
 
-//const initializeScheduler = require('../Handler/gautoscheduler');
-// client.on('ready', () => initializeScheduler(client));
-
 function cleanupSessionFiles() {
     try {
         if (!fs.existsSync(sessionName)) return;
@@ -246,80 +243,6 @@ async function startFee() {
           }
         }
       }
-      
-      
-// Add near the top with other requires
-//const { getAllGroupsWithAutoSettings } = require('./Database/config');
-
-// Add after bot is ready
-//client.on('ready', async () => {
- //   console.log('🤖 Bot is ready!');
-    
-    // Start all group schedulers
-  /*  const groups = await getAllGroupsWithAutoSettings();
-    groups.forEach(group => {
-        if (group.autoEnabled) {
-            // Start scheduler for each group
-            startGroupScheduler(client, group.jid);
-        }
-    });
-    
-    console.log(`⏰ Started schedulers for ${groups.length} groups`);
-});
-
-// Helper function to start scheduler for a group
-const groupTimers = global.groupTimers || new Map();
-global.groupTimers = groupTimers;
-
-function startGroupScheduler(client, groupId) {
-    // Clear existing timer
-    if (groupTimers.has(groupId)) {
-        clearInterval(groupTimers.get(groupId));
-    }
-    
-    // Start new timer for this group
-    const timer = setInterval(async () => {
-        try {
-            const { getGroupTime } = require('./Database/config');
-            const timeData = await getGroupTime(groupId, 'all');
-            if (!timeData) return;
-            
-            const now = new Date();
-            const currentHour = now.getHours();
-            const currentMinute = now.getMinutes();
-            
-            // Check open time
-            if (timeData.openEnabled && timeData.openTime) {
-                const [hours, minutes] = timeData.openTime.split(':').map(Number);
-                if (currentHour === hours && currentMinute === minutes) {
-                    await client.groupSettingUpdate(groupId, 'not_announcement');
-                    await client.sendMessage(groupId, {
-                        text: `❥┈┈┈┈┈┈┈┈┈┈┈┈┈┈➤\n✿ 🔓 Group opened automatically\n✿ ⏰ Time: ${timeData.openTime}\n✿ 🤖 Powered by FEE-XMD\n❥┈┈┈┈┈┈┈┈┈┈┈┈┈┈➤`
-                    });
-                    console.log(`✅ Opened group ${groupId} at ${timeData.openTime}`);
-                }
-            }
-            
-            // Check close time
-            if (timeData.closeEnabled && timeData.closeTime) {
-                const [hours, minutes] = timeData.closeTime.split(':').map(Number);
-                if (currentHour === hours && currentMinute === minutes) {
-                    await client.groupSettingUpdate(groupId, 'announcement');
-                    await client.sendMessage(groupId, {
-                        text: `❥┈┈┈┈┈┈┈┈┈┈┈┈┈┈➤\n✿ 🔒 Group closed automatically\n✿ ⏰ Time: ${timeData.closeTime}\n✿ 🤖 Powered by FEE-XMD\n❥┈┈┈┈┈┈┈┈┈┈┈┈┈┈➤`
-                    });
-                    console.log(`✅ Closed group ${groupId} at ${timeData.closeTime}`);
-                }
-            }
-        } catch (error) {
-            console.error(`Error in scheduler for ${groupId}:`, error.message);
-        }
-    }, 60000); // Check every minute
-    
-    groupTimers.set(groupId, timer);
-}
-    */  
-      
 
       if (autoview) {
         try {
