@@ -7,127 +7,126 @@
   "succes_url":"/",
   "stack":"heroku-24",
   "env":{
-    "PREFIX": {
-      "description": "Choose your bot's prefix",
-      "value": ".",
-      "required": true
+    "PREFIX":
+    {
+      "description":"choose your prefix of bot",
+      "value":".",
+      "required":true
     },
-    "AUTO_READ_STATUS": {
-      "description": "Your contact status will be read automatically (type 'yes' to activate or 'no' to deactivate; don't write in capital letters)",
-      "value": "yes",
-      "required": false
+    "AUTO_READ_STATUS":
+    {
+      "description":"Your contact status will be read automatically(type yes to active or no to deactive  ; don't write in capital letter)",
+      "value":"yes",
+      "required":false
     },
-    "GREET_MESSAGE": {
-      "description": "when enabled it automatically sends greeting message in your chats",
-      "value": "no",
-      "required": false
-    },
-    "AUTO_REACT_STATUS": {
-      "description": "Your contact status will be react automatically (type 'yes' to activate or 'no' to deactivate; don't write in capital letters)",
-      "value": "yes",
-      "required": false
-    },
-    "AUTO_BIO": {
-      "description": "This automatically update your bio status.Always make sure you insert your OWNER_NAME since it uses that to update your bio name status",
-      "value": "yes",
-      "required": false
-    },
-    "AUTO_SAVE_CONTACTS": {
-      "description":"Enter yes for your bot to auto save contacts",
+    "AUTO_DOWNLOAD_STATUS":
+    {
+      "description":"Your contact status will be download automatically and send to you(type yes to active or no to deactive ; don't write in capital letter)",
       "value":"no",
       "required":false
     },
-    "AUTO_DOWNLOAD_STATUS": {
-      "description": "Your contact status will be downloaded automatically and sent to you (type 'yes' to activate or 'no' to deactivate; don't write in capital letters)",
-      "value": "no",
-      "required": false
+    "AUTO_READ":
+    {
+      "description":"Your contact will be read messages automatically(type yes to active or no to deactive  ; don't write in capital letter)",
+      "value":"no",
+      "required":false
     },
-    "PM_PERMIT": {
-      "description": "Restrict other users from using your bot in private messages (type 'yes' to activate or 'no' to deactivate; don't write in capital letters)",
-      "value": "yes",
-      "required": false
+    "AUTO_REACT":
+    {
+      "description":"Enter yes for your bot to auto react",
+      "value":"no",
+      "required":false
     },
-    "AUTO_STATUS_TEXT": {
-      "description": "type your genuine status message",
-      "value": "💲YOUR STATUS VIEWED BY 💦 KANDALA-XMD 💨 SUCCESSFUL 😇✅✅",
-      "required": false
+    "ANTICALL":
+    {
+      "description":"Enter yes for your bot to auto reject calls",
+      "value":"no",
+      "required":false
     },
-    "AUTO_STATUS_REPLY": {
-      "description": "type your genuine status message",
-      "value": "no",
-      "required": false
+    "AUTO_REACT_STATUS":
+    {
+      "description":"Enter yes for your bot to auto like status",
+      "value":"yes",
+      "required":true
     },
-    "CHAT_BOT": {
-      "description": "urs if you want bot to chat automatic in inbox",
-      "value": "no",
-      "required": false
+    "PM_PERMIT":
+    {
+      "description":"Other user can't use your bot in pm (type yes to active or no to deactive ; don't write in capital letter)",
+      "value":"no",
+      "required":false
     },
-    "PUBLIC_MODE": {
-      "description": "Set 'yes' to make your bot public or 'no' to keep it private",
-      "value": "yes",
-      "required": false
+    "CHATBOT":
+    {
+      "description":"Enable AI chatbot - bot will reply automatically to messages. Type yes to activate or no to deactivate",
+      "value":"no",
+      "required":false
     },
-    "HEROKU_API_KEY": {
-      "description": "Insert your Heroku API key (required)",
-      "value": "",
-      "required": true
+    "BOT_NAME":{
+      "description":"put A name for your bot",
+      "value":"Kandala-Xmd",
+      "required":false
     },
-    "SESSION_ID": {
-      "description": "Enter your session ID, the code you receive after scanning the QR code",
-      "value": "",
-      "required": true
+    "BOT_MENU_LINKS":{
+      "description":"add one or many link for your bot menu  ; eg : url1,url2,url3.....",
+      "value":"https://files.catbox.moe/zotx9t.jpg",
+      "required":false
     },
-    "OWNER_NAME": {
-      "description": "don't you have a name bro.Insert your name here!!",
-      "value": "kandala_tech",
-      "required": false
+    "PUBLIC_MODE":
+    {
+      "description":"type yes to put your bot on public mode or no to put it on private mod",
+      "value":"yes",
+      "required":false
     },
-    "AUTO_READ_MESSAGES": {
-      "description": "yes toactivate no to deactivate",
-      "value": "no",
-      "required": false  
+    "HEROKU_API_KEY":{
+      "description":"insert your heroku api-key (this is optionnal)",
+      "value":"HRKU-6930f8d0-3dde-4024-8bc5-ea03012e0fc1",
+      "required":false
     },
-    "NUMERO_OWNER": {
-      "description": "Your phone number (exclude '+' and area code, e.g., '255672752355')",
-      "value": "255672752355",
-      "required": false
+    "HEROKU_APP_NAME":{
+      "description":"insert your heroku APP NAME (put the name you put on top)",
+      "required":false
     },
-    "STARTING_BOT_MESSAGE": {
-      "description": "Set 'yes' to display a starting bot message or 'no' to disable it",
-      "value": "yes",
-      "required": true
+    "SESSION_ID":
+    {
+      "description":"put your session ID , the code you receive after scanning Qr code",
+      "value":"",
+      "required":true
     },
-    "PRESENCE": {
-      "description": "Mark your presence: 1 for online, 2 for typing, 3 for recording, or leave blank for real state",
-      "value": "1",
-      "required": false
+    "OWNER_NAME":
+    {
+      "desc":"Your Name",
+      "required":false,
+      "value":"kandala"
     },
-    "ANTI_DELETE_MESSAGES": {
-      "description": "Enable anti-delete message in dm's (set 'yes' to activate or 'no' to deactivate)",
-      "value": "no",
-      "required": false
+    "NUMERO_OWNER":
+    {
+      "desc":"Your number , dont put '+' and put you area code(exemple of Tanzania '254')",
+      "required":true,
+      "value":"255672752355"
     },
-    "ANTI_CALL": {
-      "description": "Automatically decline incoming calls (set 'on' to activate or 'off' to deactivate)",
-      "value": "yes",
-      "required": false
+    "WARN_COUNT":
+    {
+      "desc":"this is the limit of warn for warning commandes",
+      "required":false,
+      "value":"2"
     },
-    "AUTO_BLOCK": {
-      "description": "Type true if you want bot to automatically  block those who spam your dm ",
-      "value": "no",
-      "required": false
+    "STARTING_BOT_MESSAGE":
+    {
+      "description":"if you don't want startting-bot-message put no else put yes",
+      "required":true,
+      "value":"no"
     },
-    "AUTO_REACT_PM": {
-      "description": "Set 'yes' to enable bot reactions to messages in private away chats",
-      "value": "no",
-      "required": false
+    "PRESENCE":{
+      "description":"Mark your presence: 1 online. 2 typing a message. 3 recording . Or leave the field blank to indicate your real state.",
+      "value":"1",
+      "required":false
     },
-    "AUTO_REACT_GC": {
-      "description": "Set 'yes' to enable bot reactions to messages in group away chats",
-      "value": "no",
-      "required": false
+    "ANTI_DELETE_MESSAGE":{
+      "description":"if you want to enable anti delete message put yes else put no",
+      "value":"yes",
+      "required":true
     }
-    },
+  },
   "buildpacks":[
     {
       "url":"heroku/nodejs"
