@@ -1,1 +1,162 @@
-const _0x4946c2=_0x9d40;(function(_0x5552c2,_0x5a5f90){const _0xd2701b=_0x9d40,_0x550bec=_0x5552c2();while(!![]){try{const _0xe1f3e7=parseInt(_0xd2701b(0x212))/(0x2c8*0x3+-0x1*0x677+-0x1e0)*(parseInt(_0xd2701b(0x1d9))/(-0x1735+0x23ef+0x197*-0x8))+parseInt(_0xd2701b(0x1da))/(0xc*0x254+-0x16c0+-0x19*0x35)+-parseInt(_0xd2701b(0x1ed))/(0x1*-0x18f3+0x169*-0x3+-0x25*-0xca)+-parseInt(_0xd2701b(0x1d3))/(0xcbc+-0x1083*-0x1+-0x1d3a)*(parseInt(_0xd2701b(0x213))/(0x1ab5+-0x182f+-0x280))+parseInt(_0xd2701b(0x1c0))/(-0x25b9+0x208f+0x531*0x1)+-parseInt(_0xd2701b(0x201))/(0x24cc+0xe6*-0xf+-0x10f*0x16)*(-parseInt(_0xd2701b(0x20f))/(-0x8da+-0x6f1+0xfd4))+-parseInt(_0xd2701b(0x1fa))/(0xc98*-0x2+-0x173*0x12+-0x3350*-0x1);if(_0xe1f3e7===_0x5a5f90)break;else _0x550bec['push'](_0x550bec['shift']());}catch(_0x1b0f31){_0x550bec['push'](_0x550bec['shift']());}}}(_0x11f8,-0xeb9*-0xb1+-0x86fea+0x247*0x3b9));const fs=require('fs'),path=require(_0x4946c2(0x1ec)),cmdsDir=path[_0x4946c2(0x203)](__dirname,'..',_0x4946c2(0x1d7));function findAllCommandFiles(_0x540ece){const _0x2fdf44=_0x4946c2,_0x3a3b7b={'FIFFk':function(_0x449391,_0x547593){return _0x449391(_0x547593);},'MdVuv':_0x2fdf44(0x1b7)};let _0x26912d=[],_0x478594=-0x1ba1+0x4e0+0x16c1;function _0x212d91(_0x5e1e7d){const _0x17c66e=_0x2fdf44,_0x680cad=fs[_0x17c66e(0x1e7)+'c'](_0x5e1e7d);for(const _0x526b2c of _0x680cad){const _0x5ef4c9=path[_0x17c66e(0x203)](_0x5e1e7d,_0x526b2c),_0x422c2b=fs[_0x17c66e(0x205)](_0x5ef4c9);if(_0x422c2b[_0x17c66e(0x1f5)+'y']())_0x3a3b7b[_0x17c66e(0x1de)](_0x212d91,_0x5ef4c9);else _0x526b2c[_0x17c66e(0x1f6)](_0x3a3b7b[_0x17c66e(0x1dc)])&&(_0x26912d[_0x17c66e(0x1f4)](_0x5ef4c9),_0x478594++);}}return _0x3a3b7b[_0x2fdf44(0x1de)](_0x212d91,_0x540ece),{'commandFiles':_0x26912d,'totalCommands':_0x478594};}const {commandFiles,totalCommands}=findAllCommandFiles(cmdsDir),commands={},aliases={'speed':_0x4946c2(0x1ff),'p':_0x4946c2(0x1ff),'ev':_0x4946c2(0x20c),'xvideo':_0x4946c2(0x1ef),'porn':_0x4946c2(0x1ef),'bug':_0x4946c2(0x1fb),'developer':_0x4946c2(0x202),'get':_0x4946c2(0x1c8),'cmd':_0x4946c2(0x1db),'s':_0x4946c2(0x1ce),'m':_0x4946c2(0x1bc),'h':_0x4946c2(0x1bc),'d':_0x4946c2(0x210),'editimg':_0x4946c2(0x1d1),'wormgpt':_0x4946c2(0x1e3),'worm':_0x4946c2(0x1e3),'whatmusic':_0x4946c2(0x1e6),'findmusic':_0x4946c2(0x1e6),'fmusic':_0x4946c2(0x1e6),'ssweb':_0x4946c2(0x200),'invite':_0x4946c2(0x1b5),'delete':_0x4946c2(0x210),'evl':_0x4946c2(0x20c),'k':_0x4946c2(0x1c5),'setprefix':_0x4946c2(0x1ea),'reactemoji':_0x4946c2(0x1c6),'autoviewstatus':_0x4946c2(0x1be),'antimention':_0x4946c2(0x1c9)+_0x4946c2(0x20e),'addowner':_0x4946c2(0x1e0),'delowner':_0x4946c2(0x1e1),'die':_0x4946c2(0x206),'kick':_0x4946c2(0x1c5),'mute':_0x4946c2(0x1df),'unmute':_0x4946c2(0x20b),'ssweb':_0x4946c2(0x200),'ss':_0x4946c2(0x200),'rvo':_0x4946c2(0x1e5),'pint':_0x4946c2(0x1f0),'opengroup':_0x4946c2(0x20b),'photo':_0x4946c2(0x1fd),'pint':_0x4946c2(0x1f0),'tophoto':_0x4946c2(0x1fd),'latency':_0x4946c2(0x1ff),'groupstatus':_0x4946c2(0x1d0),'runtime':_0x4946c2(0x1eb),'admin':_0x4946c2(0x204),'ghibli':_0x4946c2(0x1d2),'groups':_0x4946c2(0x207),'bc':_0x4946c2(0x214),'enhance':_0x4946c2(0x1ca),'id':_0x4946c2(0x1c2),'cekid':_0x4946c2(0x1c2),'idch':_0x4946c2(0x1c2),'pp':_0x4946c2(0x215),'kickall':_0x4946c2(0x1f7),'kickall2':_0x4946c2(0x1f8),'exec':_0x4946c2(0x211),'upscale':_0x4946c2(0x1ca),'tohd':_0x4946c2(0x1ca),'hd':_0x4946c2(0x1ca),'leave':_0x4946c2(0x1e9),'left':_0x4946c2(0x1e9),'join':_0x4946c2(0x1b6),'git':_0x4946c2(0x1f1),'ss':_0x4946c2(0x200),'getpp':_0x4946c2(0x1bf),'allvars':_0x4946c2(0x1cf),'redeploy':_0x4946c2(0x1c3),'whois':_0x4946c2(0x1bf),'ssweb':_0x4946c2(0x1d4),'help':_0x4946c2(0x1bc),'commands':_0x4946c2(0x1bc),'list':_0x4946c2(0x1bc),'owner':_0x4946c2(0x202),'repo':_0x4946c2(0x1f3),'getmusic':_0x4946c2(0x1e6),'gmusic':_0x4946c2(0x1e6),'sc':_0x4946c2(0x1f3),'translate':'tr','trt':'tr','trigger':_0x4946c2(0x1ee)+_0x4946c2(0x208),'linkgc':_0x4946c2(0x1b5),'gclink':_0x4946c2(0x1b5),'grouplink':_0x4946c2(0x1b5),'linkgroup':_0x4946c2(0x1b5),'mention':_0x4946c2(0x1ba),'vv':_0x4946c2(0x20a),'search':_0x4946c2(0x1cb),'youtubesearch':_0x4946c2(0x1cb),'xd':_0x4946c2(0x20a),'reset':_0x4946c2(0x1e2),'mute':_0x4946c2(0x1df),'app':_0x4946c2(0x1d6),'fb':_0x4946c2(0x1fc),'facebook':_0x4946c2(0x1fc),'instagram':_0x4946c2(0x1dd),'ig':_0x4946c2(0x1dd),'rch':_0x4946c2(0x1b8),'img':_0x4946c2(0x1bd),'url':_0x4946c2(0x1fe),'tourl':_0x4946c2(0x1fe),'yta':_0x4946c2(0x1c1),'youtube':_0x4946c2(0x216),'tt':_0x4946c2(0x20d),'tiktok':_0x4946c2(0x20d),'twitter':_0x4946c2(0x1d5),'x':_0x4946c2(0x1d5),'mutegroup':_0x4946c2(0x1df),'ai':_0x4946c2(0x209),'ytv':_0x4946c2(0x216),'mf':_0x4946c2(0x1cc),'emojimix':_0x4946c2(0x217),'chatbot':_0x4946c2(0x1c7),'autoreply':_0x4946c2(0x1c7),'enc':_0x4946c2(0x1b9),'req':_0x4946c2(0x1f9),'approve':_0x4946c2(0x1e8)+'l','reject':_0x4946c2(0x218),'up':_0x4946c2(0x1eb)};commandFiles[_0x4946c2(0x1e4)](_0x4959ed=>{const _0x125b7a=_0x4946c2,_0x2f0974={'IorBD':_0x125b7a(0x1b7),'DyZgp':function(_0x2f3ab5,_0x39cee7){return _0x2f3ab5(_0x39cee7);}},_0x17c153=path[_0x125b7a(0x1c4)](_0x4959ed,_0x2f0974[_0x125b7a(0x1f2)]),_0x210100=_0x2f0974[_0x125b7a(0x1cd)](require,_0x4959ed);commands[_0x17c153]=_0x210100[_0x125b7a(0x1bb)]||_0x210100;}),module[_0x4946c2(0x1d8)]={'commands':commands,'aliases':aliases,'totalCommands':totalCommands};function _0x9d40(_0x173897,_0x222baa){_0x173897=_0x173897-(0x1ea9+0x239b+-0x15*0x313);const _0x5e449c=_0x11f8();let _0x173d0f=_0x5e449c[_0x173897];return _0x173d0f;}function _0x11f8(){const _0x22f277=['mediafire','DyZgp','sticker','allvar','gstatus','imgedit','toghibli','15fBezFV','ssweb','twtdl','apk','plugins','exports','32OUNExK','3819573GXMLeV','getcmd','MdVuv','igdl','FIFFk','close','addsudo','delsudo','revoke','darkgpt','forEach','vvx','shazam','readdirSyn','approve-al','leavegc','prefix','uptime','path','1314164QXPLOl','triggerupd','xvideos','pinterest','github','IorBD','script','push','isDirector','endsWith','kill','kill2','requests','11263700qfGdhs','crash','fbdl','picture','upload','ping','screenshot','32SSAdRN','dev','join','oadmin','statSync','block','botgc','ate','gpt','retrieve','open','eval','tikdl','mention','808065kSmVFE','del','shell','11027aNatYC','784194ELoIKX','broadcast','fullpp','ytmp4','emix','reject-all','link','joingc','.js','xreact','encrypt','tagall','run','menu','image','autoview','profile','4956133GMSRtJ','ytmp3','checkid','update','basename','remove','reaction','chatbotpm','fetch','antistatus','remini','yts'];_0x11f8=function(){return _0x22f277;};return _0x11f8();}
+const fs = require('fs');
+const path = require('path');
+
+const cmdsDir = path.join(__dirname, '..', 'plugins');
+
+function findAllCommandFiles(dir) {
+    let commandFiles = [];
+    let totalCommands = 0;
+
+    function findFiles(directory) {
+        const files = fs.readdirSync(directory);
+        for (const file of files) {
+            const filePath = path.join(directory, file);
+            const stat = fs.statSync(filePath);
+
+            if (stat.isDirectory()) {
+                findFiles(filePath);
+            } else if (file.endsWith('.js')) {
+                commandFiles.push(filePath);
+                totalCommands++;
+            }
+        }
+    }
+
+    findFiles(dir);
+    return { commandFiles, totalCommands };
+}
+
+const { commandFiles, totalCommands } = findAllCommandFiles(cmdsDir);
+
+const commands = {};
+const aliases = {
+    speed: "ping",
+    p: "ping",
+    ev: "eval",
+    xvideo: "xvideos",
+    porn: "xvideos",
+    bug: "crash",
+    developer: "dev",
+    get: "fetch",
+    cmd: "getcmd",
+    s: "sticker",
+    m: "menu",
+    h: "menu",
+    d: "del",
+    editimg: "imgedit",
+    wormgpt: "darkgpt",
+    worm: "darkgpt",
+    whatmusic: "shazam",
+    findmusic: "shazam",
+    fmusic: "shazam",
+    ssweb: "screenshot",
+    invite: "link",
+    delete: "del",
+    evl: "eval",
+    k: "remove",
+    setprefix: "prefix",
+    reactemoji: "reaction",
+    autoviewstatus: "autoview",
+    antimention: "antistatusmention",
+    addowner: "addsudo",
+    delowner: "delsudo",
+    die: "block",
+    kick: "remove",
+    mute: "close",
+    unmute: "open",
+    ssweb: "screenshot",
+    ss: "screenshot",
+    rvo: "vvx",
+    pint: "pinterest",
+    opengroup: "open",
+    photo: "picture",
+    pint: "pinterest",
+    tophoto: "picture",
+    latency: "ping",
+    groupstatus: "gstatus",
+    runtime: "uptime",
+    admin: "oadmin",
+    ghibli: "toghibli",
+    groups: "botgc",
+    bc: "broadcast",
+    enhance: "remini",
+    id: "checkid",
+    cekid: "checkid",
+    idch: "checkid",
+    pp: "fullpp",
+    kickall: "kill",
+    kickall2: "kill2",
+    exec: "shell",
+    upscale: "remini",
+    tohd: "remini",
+    hd: "remini",
+    leave: "leavegc",
+    left: "leavegc",
+    join: "joingc",
+    git: "github",
+    ss: "screenshot",
+    getpp: "profile",
+    allvars: "allvar",
+    redeploy: "update",
+    whois: "profile",
+    ssweb: "ssweb",
+    help: "menu",
+    commands: "menu",
+    list: "menu",
+    owner: "dev",
+    repo: "script",
+    getmusic: "shazam",
+    gmusic: "shazam",
+    sc: "script",
+    translate: "tr",
+    trt: "tr",
+    trigger: "triggerupdate",
+    linkgc: "link",
+    gclink: "link",
+    grouplink: "link",
+    linkgroup: "link",
+    mention: "tagall",
+    vv: "retrieve",
+    search: "yts",
+    youtubesearch: "yts",
+    xd: "retrieve",
+    reset: "revoke",
+    mute: "close",
+    app: "apk",
+    fb: "fbdl",
+    facebook: "fbdl",
+    instagram: "igdl",
+    ig: "igdl",
+    rch: "xreact",
+    img: "image",
+    url: "upload",
+    tourl: "upload",
+    yta: "ytmp3",
+    youtube: "ytmp4",
+    tt: "tikdl",
+    tiktok: "tikdl",
+    twitter: "twtdl",
+    x: "twtdl",
+    mutegroup: "close",
+    ai: "gpt",
+    ytv: "ytmp4",
+    mf: "mediafire",
+    emojimix: "emix",
+    chatbot: "chatbotpm",
+    autoreply: "chatbotpm",
+    enc: "encrypt",
+    req: "requests",
+    approve: "approve-all",
+    reject: "reject-all",
+    up: "uptime"
+};
+
+commandFiles.forEach((file) => {
+    const commandName = path.basename(file, '.js');
+    const commandModule = require(file);
+
+   
+    commands[commandName] = commandModule.run || commandModule;
+});
+
+module.exports = { commands, aliases, totalCommands };
