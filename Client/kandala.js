@@ -63,7 +63,7 @@ module.exports = fee = async (client, m, chatUpdate, store) => {
         const bannedUsers = await getBannedUsers();
         let settings = await getSettings();
         if (!settings) {
-            console.error("Anakonda-TMD: Settings not found, cannot proceed!");
+            console.error("kandala-MD: Settings not found, cannot proceed!");
             return;
         }
 
@@ -101,7 +101,7 @@ module.exports = fee = async (client, m, chatUpdate, store) => {
 
         const timestamp = speed();
         const feespeed = speed() - timestamp;
-        const filePath = require('path').resolve(__dirname, '../timnasa.jpg');
+        const filePath = require('path').resolve(__dirname, '../kandala.jpg');
         const pict = fs.readFileSync(filePath);
 
         const commandName = body && (body.startsWith(prefix) || body.startsWith('/'))
