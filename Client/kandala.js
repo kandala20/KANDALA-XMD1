@@ -63,7 +63,7 @@ module.exports = fee = async (client, m, chatUpdate, store) => {
         const bannedUsers = await getBannedUsers();
         let settings = await getSettings();
         if (!settings) {
-            console.error("kandala-MD: Settings not found, cannot proceed!");
+            console.error("Kandala-XMD: Settings not found, cannot proceed!");
             return;
         }
 
@@ -197,7 +197,7 @@ module.exports = fee = async (client, m, chatUpdate, store) => {
             const senderNumber = m.sender.replace(/@s\.whatsapp\.net$/, '');
             if (bannedUsers.includes(senderNumber)) {
                 await client.sendMessage(m.chat, {
-                    text: `╭━━━━━━━━━━━━━━━━━━━━\n┋➤ Banned, huh? You're too pathetic to use my commands. Get lost! 😎`
+                    text: `❥┈┈┈┈┈┈┈┈┈┈┈┈┈┈➤\n┋✿ Banned, huh? You're too pathetic to use my commands. Get lost! 😎`
                 }, { quoted: fakeQuoted });
                 return;
             }
