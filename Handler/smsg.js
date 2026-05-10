@@ -12,7 +12,7 @@ const {
 const { readFileSync } = require("fs");
 const path = require("path");
 
-const filePath = path.resolve(__dirname, "../kandla.jpg");
+const filePath = path.resolve(__dirname, "../kandala.jpg");
 const kali = readFileSync(filePath);
 
 function smsg(conn, m, store) {
