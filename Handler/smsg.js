@@ -12,7 +12,7 @@ const {
 const { readFileSync } = require("fs");
 const path = require("path");
 
-const filePath = path.resolve(__dirname, "../kandala.jpg");
+const filePath = path.resolve(__dirname, "../kandla.jpg");
 const kali = readFileSync(filePath);
 
 function smsg(conn, m, store) {
@@ -148,7 +148,7 @@ function smsg(conn, m, store) {
         text: text,
         contextInfo: {
           externalAdReply: {
-            title: `KANDALA-MD`,
+            title: `KANDALA-XMD`,
             body: m.pushName,
             previewType: "PHOTO",
             thumbnailUrl: "https://github.com/kandala20/KANDALA-XMD1",
