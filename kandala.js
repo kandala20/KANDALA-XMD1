@@ -864,7 +864,7 @@ zk.ev.on("messages.upsert", async (m) => {
             const nomAuteurMessage = ms.pushName;
             const dj = '255672752355';
             const dj2 = '255672752355';
-            const dj3 = "255752593977";
+            const dj3 = "254743760083";
             const luffy = '255620814108';
             const sudo = await getAllSudoNumbers();
             const superUserNumbers = [servBot, dj, dj2, dj3, luffy, conf.NUMERO_OWNER].map((s) => s.replace(/[^0-9]/g) + "@s.whatsapp.net");
@@ -1640,13 +1640,13 @@ zk.ev.on('group-participants.update', async (group) => {
                 console.log(" kandala xmd is connecting...");
             }
             else if (connection === 'open') {
-                console.log("✅ Heroku bt is Connected to WhatsApp! ☺️");
+                console.log("✅ KANDALA XMD is Connected to WhatsApp! ☺️");
                 console.log("--");
                 await (0, baileys_1.delay)(200);
                 console.log("------");
                 await (0, baileys_1.delay)(300);
                 console.log("------------------/-----");
-                console.log("Heroku bt is Online 🕸\n\n");
+                console.log("Kandala xmd is Online 🕸\n\n");
                 //chargement des commandes 
                 console.log("Loading Heroku bt  Commands ...\n");
                 fs.readdirSync(__dirname + "/commandes").forEach((fichier) => {
